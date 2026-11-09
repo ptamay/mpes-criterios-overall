@@ -9,11 +9,20 @@
 
 O GitHub é a fonte da verdade. Pacotes ZIP anteriores são capturas históricas que **não** substituem os arquivos da `main`. Para novas análises por IAs, carregar primeiro `AGENTS.md`, `docs/contrato-ia.md`, `config/criteria.v1.json` e os arquivos de evidência pertinentes.
 
+## Uso em outras IAs
+
+- **Claude Code:** `CLAUDE.md` importa o `AGENTS.md` canônico; confira o contexto por `/context all`.
+- **Gemini CLI:** `GEMINI.md` importa o `AGENTS.md` canônico; confira por `/memory show`.
+- **Gemini no navegador:** importe a URL do GitHub pela opção **Importar código**, então peça explicitamente a leitura das regras. O conteúdo não é atualizado automaticamente após novos commits. Guia: [`uso-gemini.md`](uso-gemini.md).
+- **Política:** entradas específicas por ferramenta só orientam o carregamento e o fluxo; não duplicar nem redefinir `config/criteria.v1.json`.
+
 ## Arquivos e responsabilidades
 
 | Caminho | Responsabilidade |
 | --- | --- |
 | `README.md` | Apresentação, índice das regras e exemplos, ressalvas |
+| `CLAUDE.md` / `GEMINI.md` | Pontos de entrada específicos, com importação de `AGENTS.md` |
+| `docs/uso-gemini.md` | Tutorial Gemini web e Gemini CLI, limitações de sincronização |
 | `AGENTS.md` e `docs/contrato-ia.md` | Instruções e requisitos de evidência para IAs |
 | `config/criteria.v1.json` | Pesos e classificação (não alterar por atualização documental) |
 | `docs/metodologia.md` | Definições e cálculo do índice editorial |

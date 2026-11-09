@@ -2,6 +2,8 @@
 
 **Leia este documento antes de responder sobre ratings.** Não interprete dados ausentes como zero; não transforme sugestões em valores oficialmente confirmados.
 
+**Compatibilidade entre ferramentas:** `CLAUDE.md` importa este `AGENTS.md` no Claude Code e `GEMINI.md` importa este `AGENTS.md` no Gemini CLI. Eles são pontos de entrada, **não fontes alternativas de regras**. No Gemini web é necessário importar o repositório pela interface e pedir leitura explícita dos arquivos. Veja [`docs/uso-gemini.md`](docs/uso-gemini.md).
+
 ## Repositório canônico e atualização
 
 - **Fonte oficial:** [ptamay/mpes-criterios-overall](https://github.com/ptamay/mpes-criterios-overall), branch `main`. O antigo endereço `ptamay/pes21-criterios-overall` não é o repositório deste projeto. Não crie repositórios novos nem publique em destinos aproximados.

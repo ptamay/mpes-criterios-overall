@@ -21,5 +21,19 @@ class TestRepositoryDocumentation(unittest.TestCase):
             self.assertNotIn("--force", content.replace("force-push", ""))
             self.assertIn("git push origin main", content)
 
+    def test_multi_ai_entrypoints_share_agents(self):
+        claude = (ROOT / "CLAUDE.md").read_text(encoding="utf-8")
+        gemini = (ROOT / "GEMINI.md").read_text(encoding="utf-8")
+        tutorial = (ROOT / "docs/uso-gemini.md").read_text(encoding="utf-8")
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("@AGENTS.md", claude)
+        self.assertIn("@./AGENTS.md", gemini)
+        for path in ("CLAUDE.md", "GEMINI.md", "docs/uso-gemini.md"):
+            self.assertIn(path, readme)
+        self.assertIn("Importar código", tutorial)
+        self.assertIn("não", tutorial.lower())
+        for file in (claude, gemini):
+            self.assertIn("ptamay/mpes-criterios-overall", file if "ptamay/" in file else (ROOT / "AGENTS.md").read_text(encoding="utf-8"))
+
 if __name__ == "__main__":
     unittest.main()

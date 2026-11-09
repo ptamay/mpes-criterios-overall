@@ -1,5 +1,11 @@
 # Histórico de alterações — MPES
 
+## Integração multi-IA — 09/11/2026 (documentação, sem revisão de notas)
+
+- Entradas leves `CLAUDE.md` e `GEMINI.md`, ambas incorporando `AGENTS.md` por importação nativa, sem duplicar pesos ou políticas.
+- Novo `docs/uso-gemini.md` com importação de GitHub no Gemini web, limitação de snapshots e procedimento via Gemini CLI.
+- README, AGENTS, guia de manutenção e testes de documentação atualizados. Fórmula-base v1.0, fichas e Overalls **inalterados**; pacote documental permanece v1.10.
+
 ## Documentação e publicação — 09/11/2026 (repositório oficial)
 
 - Repositório canônico confirmado: [`ptamay/mpes-criterios-overall`](https://github.com/ptamay/mpes-criterios-overall), branch `main`. A versão **v1.10** foi publicada inicialmente no commit [`571f12f`](https://github.com/ptamay/mpes-criterios-overall/commit/571f12f4378e1fcd3ee2e39998a9574e491d3638), com 47 arquivos.

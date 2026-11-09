@@ -11,6 +11,8 @@
 **Validação local** (Python 3.11+, na raiz do repositório): `python -m src.pes21_method validate` e `python -m unittest discover -s tests -v`. A verificação estrutural não substitui teste do Overall no motor do PES.
 
 
+**Entradas por ferramenta:** [`CLAUDE.md`](CLAUDE.md) (Claude Code) e [`GEMINI.md`](GEMINI.md) (Gemini CLI) reutilizam `AGENTS.md`; não existem regras diferentes por provedor. Para o Gemini no navegador, siga o [tutorial de importação do GitHub](docs/uso-gemini.md) e peça explicitamente a leitura dos arquivos normativos. Importar um repositório no chat **não** sincroniza alterações futuras automaticamente.
+
 - **Para IAs:** [`AGENTS.md`](AGENTS.md) → [`docs/contrato-ia.md`](docs/contrato-ia.md).
 - **Regras computáveis:** [`config/criteria.v1.json`](config/criteria.v1.json).
 - **Explicação dos critérios:** [`docs/metodologia.md`](docs/metodologia.md).
