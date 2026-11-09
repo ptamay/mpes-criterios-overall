@@ -1,3 +1,14 @@
+# Histórico de alterações — MPES
+
+## Documentação e publicação — 09/11/2026 (repositório oficial)
+
+- Repositório canônico confirmado: [`ptamay/mpes-criterios-overall`](https://github.com/ptamay/mpes-criterios-overall), branch `main`. A versão **v1.10** foi publicada inicialmente no commit [`571f12f`](https://github.com/ptamay/mpes-criterios-overall/commit/571f12f4378e1fcd3ee2e39998a9574e491d3638), com 47 arquivos.
+- README atualizado para distinguir versão do pacote **v1.10** da fórmula-base **v1.0**; adicionadas instruções de validação e guia de manutenção do repositório.
+- Scripts de publicação corrigidos para o repositório existente. Não criam repositório, não fazem force push e exigem commit local já revisado, checkout `main`, origin correto e avanço fast-forward.
+- Exemplos indexados; testes de consistência do nome canônico e do procedimento de publicação adicionados. **Nenhuma alteração em pesos, atributos ou Overall-alvo.**
+
+> **Nota histórica:** as entradas abaixo descrevem os estados na data em que foram produzidas. Menções a “GitHub não publicado” e ao nome de repositório anterior são registros históricos, não o estado atual. **O estado atual é o repositório oficial acima.**
+
 ## v1.10 — 09/11/2026 (reavaliação Messi × Neymar; pacote local, GitHub não publicado)
 
 - Novas fichas completas em `examples/lionel-messi.json` e `examples/neymar.json` com 25 atributos, 4 parâmetros, 3 inspiradores, candidatas do catálogo PES, posição MAT e clubes REAIS distintos dos clubes da liga personalizada.
@@ -36,7 +47,6 @@
 - Nenhuma mudança nos pesos da metodologia; desempenho de corrida permanece não medido e Nível C físico.
 - A ficha não foi validada dentro do PES. Sem publicação remota no GitHub.
 
-# Changelog
 
 ## v1.5 — 08/11/2026 (Kevin De Bruyne; pacote local; GitHub ainda não publicado)
 

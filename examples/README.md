@@ -1,9 +1,9 @@
-# Exemplos editoriais
+# Exemplos editoriais — v1.10
 
 - **[Garnacho](garnacho.json):** PTE, 78, confiança moderada; Premier League 2025/26 como temporada principal.
 - **[Lukaku](lukaku.json):** CA, 79, confiança moderada-baixa; última amostra robusta em 2024/25, lesão e baixa minutagem depois.
 
-Ambos contêm: identidade, evidências por temporada, quatro notas com justificativas, cálculo reproduzível, os **25 atributos** e parâmetros especiais, fontes e riscos. Não são avaliações oficialmente verificadas no PES; `overall_game_verified` permanece `null`.
+Garnacho e Lukaku contêm: identidade, evidências por temporada, quatro notas com justificativas, cálculo reproduzível, os **25 atributos** e parâmetros especiais, fontes e riscos. Não são avaliações oficialmente verificadas no PES; `overall_game_verified` permanece `null`.
 
 **Pesquisa histórica para futuras avaliações:** [`../docs/coleta-historica.md`](../docs/coleta-historica.md). Consultar Opta e Sofascore em temporadas equivalentes; os JSONs atuais incluem URLs, mas **não** uma média Sofascore histórica validada. Habilidades propostas foram normalizadas ao catálogo de 41; sugestões sem mapeamento inequívoco ficam em `skills_pending_mapping`.
 
@@ -16,3 +16,8 @@ Ambos contêm: identidade, evidências por temporada, quatro notas com justifica
 - [`luciano-acosta.json`](luciano-acosta.json): Fluminense, MAT, índice 79,195 → Overall-alvo 79. Série A 2026: 29j/1.623min/6g/5a, 55 chances, drible e criação fortes; velocidade/aceleração estimadas Nível C.
 
 - [`cryzan.json`](cryzan.json): **revisado v1.9**, índice 77,07 → OVR-alvo 77; atributos técnicos contextualizados à liga chinesa com estimativas editoriais, sem coeficiente validado; atributos físicos não penalizados pela competição. Ler [`../docs/contextualizacao-competitiva.md`](../docs/contextualizacao-competitiva.md).
+
+- [`lionel-messi.json`](lionel-messi.json): Inter Miami (clube real), MAT no patch, MLS 2026; Overall-alvo **86**, Drible **90**, produção e minutagem auditadas por recorte, sem validação in-game.
+- [`neymar.json`](neymar.json): Santos (clube real), MAT no patch, Brasileirão 2026; Overall-alvo **82**, Drible **88**, recorte Sofascore distinto do FotMob, sem validação in-game.
+
+**Como avaliar ou atualizar:** [`../docs/contrato-ia.md`](../docs/contrato-ia.md) · [`../docs/recalibracao-drible-2026.md`](../docs/recalibracao-drible-2026.md) · [`../docs/publicacao-github.md`](../docs/publicacao-github.md). Os nove JSONs são fichas **editoriais**, nunca Overalls medidos dentro do PES.

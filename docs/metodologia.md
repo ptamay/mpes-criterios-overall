@@ -1,4 +1,6 @@
-# Metodologia v1.0 — O que significa cada número
+# Metodologia — fórmula-base v1.0 (documentação MPES v1.10)
+
+**Fonte canônica:** [ptamay/mpes-criterios-overall](https://github.com/ptamay/mpes-criterios-overall) · [guia de atualização](publicacao-github.md). Este documento explica a fórmula aprovada; a versão de documentação 1.10 não significa revisão dos pesos. Datas de 07/11/2026 abaixo identificam recortes históricos e não instruem a reutilizá-los em avaliações futuras.
 
 ## 1. Finalidade e escopo
 

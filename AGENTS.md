@@ -2,6 +2,14 @@
 
 **Leia este documento antes de responder sobre ratings.** Não interprete dados ausentes como zero; não transforme sugestões em valores oficialmente confirmados.
 
+## Repositório canônico e atualização
+
+- **Fonte oficial:** [ptamay/mpes-criterios-overall](https://github.com/ptamay/mpes-criterios-overall), branch `main`. O antigo endereço `ptamay/pes21-criterios-overall` não é o repositório deste projeto. Não crie repositórios novos nem publique em destinos aproximados.
+- **Versões distintas:** a documentação e os exemplos estão na versão **v1.10**; o arquivo `config/criteria.v1.json` representa a fórmula-base **v1.0**. Alterações documentais não autorizam mudar pesos ou recalcular fichas.
+- **Manutenção:** consulte [`docs/publicacao-github.md`](docs/publicacao-github.md), leia os arquivos atuais do GitHub antes de alterar, preserve proveniência e recortes, execute `python -m src.pes21_method validate` e `python -m unittest discover -s tests -v`, e registre alterações no CHANGELOG. Sempre informe o SHA do commit ou deixe explícito que a publicação não ocorreu.
+- **Regra de avaliação:** dados Sofascore/Opta não são atributos oficiais de PES; separar estatística verificada, estimativa editorial e valores confirmados no editor. Não transportar diretamente drible, passes ou finalização entre ligas de exigência diferente e não penalizar fisicamente por nome da liga.
+
+
 1. Use [`config/criteria.v1.json`](config/criteria.v1.json) como fonte de verdade para pesos, classificação e arredondamento. Use [`docs/metodologia.md`](docs/metodologia.md) para explicar critérios.
 2. Use [`docs/atributos-pes21.md`](docs/atributos-pes21.md) para mapear os **25 atributos** PES, **4 parâmetros de escala especial** (incluindo resistência a lesões) e **3 inspiradores**. Use [`config/pes21-skills.json`](config/pes21-skills.json) para os **41 skills de jogador e 7 estilos COM**, que são categorias distintas. Não misture cabeceio com impulsão; condução firme com corrida; chute colocado com finalização em movimento.
 3. **CONSULTA HISTÓRICA OBRIGATÓRIA para todo jogador novo ou reavaliação:** seguir a ordem em [`docs/coleta-historica.md`](docs/coleta-historica.md): **(a) Opta Analyst → Career History → temporadas e separação de liga/copa; (b) Sofascore → Temporada → selecionar ano e competição → Partidas/estatísticas; (c) cruzar a mesma competição/época e registrar URLs, minutagem, fonte e data da consulta.** Examinar temporada corrente + última encerrada + anterior; recuar mais se a última completa tiver menos de 900 minutos. **Se uma fonte não for acessível, declarar falha de consulta, não inventar números e reduzir confiança.** Preferir 2025/26 nas avaliações com corte 07/11/2026 e usar 2024/25 quando necessário.

@@ -1,10 +1,15 @@
-# PES 2021 — Critérios de Overall para Liga
+# MPES — Critérios de Overall para PES 2021
 
 **Metodologia aberta e auditável de avaliação de jogadores do PES 2021**, pensada para uma liga personalizada cujo nível de comparação é o Brasileirão Série A. Inclui regras, definições dos 25 atributos e nove exemplos editoriais (Garnacho, Lukaku, Álvaro Montoro, Gabriel Bontempo, Kevin De Bruyne, Luciano Acosta, Cryzan, Messi e Neymar, até 09/11/2026).
 
-> **Estado: experimental v1.0.** Os pesos gerais foram adotados pela liga, mas as conversões de estatísticas para notas ainda **não foram calibradas**. Valores de atributos são propostas editoriais. Não confundir o índice da metodologia com o Overall gerado pelo motor do PES.
+> **Documentação publicada: v1.10 (09/11/2026). Fórmula-base: v1.0.** Os pesos gerais foram adotados pela liga, mas as conversões de estatísticas para notas ainda **não foram calibradas**. Valores de atributos são propostas editoriais. Não confundir o índice da metodologia com o Overall gerado pelo motor do PES.
 
 ## Comece aqui
+
+**Repositório oficial:** [ptamay/mpes-criterios-overall](https://github.com/ptamay/mpes-criterios-overall), branch `main`. Este repositório é a fonte canônica das regras e fichas; arquivos ZIP anteriores são registros históricos. Consulte o [guia de manutenção e publicação](docs/publicacao-github.md) antes de atualizar. **v1.10** é a versão do pacote documental/de exemplos; `config/criteria.v1.json` continua identificando a **fórmula v1.0**, cujo peso 45/35/15/5 não mudou.
+
+**Validação local** (Python 3.11+, na raiz do repositório): `python -m src.pes21_method validate` e `python -m unittest discover -s tests -v`. A verificação estrutural não substitui teste do Overall no motor do PES.
+
 
 - **Para IAs:** [`AGENTS.md`](AGENTS.md) → [`docs/contrato-ia.md`](docs/contrato-ia.md).
 - **Regras computáveis:** [`config/criteria.v1.json`](config/criteria.v1.json).
