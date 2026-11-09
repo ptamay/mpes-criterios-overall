@@ -1,0 +1,135 @@
+{
+  "version": "1.0.0-experimental",
+  "snapshot_date": "2026-11-07",
+  "purpose": "Estimativa de Overall para liga PES 2021 comparável ao Brasileirão Série A",
+  "reference_players": [
+    {
+      "name": "Messi",
+      "overall": 86,
+      "status": "assessed_2026_sofascore_editorial_not_game_validated",
+      "assessment_file": "examples/lionel-messi.json"
+    },
+    {
+      "name": "Estêvão",
+      "overall": 82,
+      "status": "anchor_not_audited"
+    }
+  ],
+  "calibration_status": "NOT_CALIBRATED",
+  "score_type": "expert_assigned_normalized_0_100_not_raw_statistics",
+  "weights": {
+    "technical": 0.45,
+    "performance": 0.35,
+    "competition": 0.15,
+    "history": 0.05
+  },
+  "performance_proposed_subweights": {
+    "position_specific_statistics": 0.6,
+    "sofascore_positional_percentile": 0.25,
+    "consistency": 0.15
+  },
+  "raw_statistics_rule": "never_apply_performance_subweights_until_position_specific_percentile_calibration_exists",
+  "rounding": "ROUND_HALF_UP",
+  "confidence_from_minutes": {
+    "high_min": 1800,
+    "moderate_min": 900,
+    "low_below": 900,
+    "interpretation": "amostra da temporada prioritária; confiança final pode ser menor por lesão/defasagem"
+  },
+  "smoothing": {
+    "enabled_when_reliable_prior": true,
+    "k_minutes": 900,
+    "formula": "m/(m+900)*D_recent + 900/(m+900)*D_prior",
+    "status": "proposal_not_applied_to_examples"
+  },
+  "reputation_rule": "evidência histórica, nunca fama; contribuição moderada (~1 ponto de Overall em relação à referência neutra)",
+  "competition_rule": "prefer minutes-weighted opponent strength; use dated league average only as approximation; do not award flat bonus by club; technical action statistics must be opponent/context adjusted before PES attribute inference; policy config/competition-adjustment.v1.json; avoid double counting in T/D/C; no automatic physical attribute penalty by league",
+  "tier_table": [
+    {
+      "minimum": 86,
+      "maximum": 86,
+      "label": "Referência máxima"
+    },
+    {
+      "minimum": 83,
+      "maximum": 85,
+      "label": "Elite mundial"
+    },
+    {
+      "minimum": 80,
+      "maximum": 82,
+      "label": "Extraclasse"
+    },
+    {
+      "minimum": 78,
+      "maximum": 79,
+      "label": "Craque"
+    },
+    {
+      "minimum": 76,
+      "maximum": 77,
+      "label": "Muito bom"
+    },
+    {
+      "minimum": 74,
+      "maximum": 75,
+      "label": "Bom"
+    },
+    {
+      "minimum": 72,
+      "maximum": 73,
+      "label": "Regular"
+    },
+    {
+      "minimum": 70,
+      "maximum": 71,
+      "label": "Rotação"
+    },
+    {
+      "minimum": 0,
+      "maximum": 69,
+      "label": "Abaixo do padrão"
+    }
+  ],
+  "above_reference_max": "Sem classificação: revisar calibração, não truncar silenciosamente",
+  "league_averages_2026_07_27": [
+    {
+      "league": "Premier League",
+      "strength": 92.0
+    },
+    {
+      "league": "Bundesliga",
+      "strength": 85.9
+    },
+    {
+      "league": "LaLiga",
+      "strength": 85.7
+    },
+    {
+      "league": "Serie A (Itália)",
+      "strength": 85.0
+    },
+    {
+      "league": "Ligue 1",
+      "strength": 84.8
+    },
+    {
+      "league": "Brasileirão Série A",
+      "strength": 83.3
+    },
+    {
+      "league": "Primeira Liga (Portugal)",
+      "strength": 81.3
+    },
+    {
+      "league": "Süper Lig (Turquia)",
+      "strength": 79.0
+    }
+  ],
+  "league_average_source": {
+    "url": "https://theanalyst.com/articles/strongest-football-leagues-in-the-world-opta-power-rankings",
+    "as_of": "2026-07-27"
+  },
+  "pes_attribute_note": "O overall in-game depende de atributos e posição. Índice editorial NÃO é fórmula oficial do PES.",
+  "technical_transfer_policy": "config/competition-adjustment.v1.json (principle approved, numerical transfer factors NOT_CALIBRATED)"
+}

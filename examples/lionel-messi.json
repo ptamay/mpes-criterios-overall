@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0.0",
+  "method_version": "1.0.0-experimental",
+  "record_status": "PROVISIONAL_EXPERT_ESTIMATE",
+  "player": {
+    "slug": "lionel-messi",
+    "name": "Lionel Messi",
+    "sofascore_player_id": 12994,
+    "club_as_of_snapshot": "Inter Miami CF",
+    "position_pes": "MAT",
+    "preferred_foot": "left"
+  },
+  "snapshot_date": "2026-11-09",
+  "competition_strength_calculation": "manual_approximation_not_minutes_weighted_opponent_sample",
+  "season_evidence": [
+    {
+      "season": "2025",
+      "club": "Inter Miami CF",
+      "competition": "MLS",
+      "scope": "domestic_league",
+      "matches": 28,
+      "minutes": 2420,
+      "goals": 29,
+      "assists": 19,
+      "source_key": "mls_history"
+    },
+    {
+      "season": "2026",
+      "club": "Inter Miami CF",
+      "competition": "MLS",
+      "scope": "domestic_league",
+      "matches": 30,
+      "minutes": 2574,
+      "goals": 26,
+      "assists": 13,
+      "source_key": "sofa_comparison"
+    }
+  ],
+  "dimensions": {
+    "technical": {
+      "score": 88,
+      "basis": "Habilidade de recepção, condução, drible, precisão de passe e finalização ainda em padrão muito alto, com velocidade/impulsão reduzidas pela idade; valor editorial não calculado automaticamente pelos stats.",
+      "provenance": "expert_estimate"
+    },
+    "performance": {
+      "score": 86,
+      "basis": "Sofascore MLS 2026 30j/2574min, 26 gols, 13 assistências, nota 8,39, 2,0 dribles certos/jogo (51,3%); 2025 29 gols e 19 assistências segundo MLS. D mede produção intraliga e regularidade; T e C não devem descontar duas vezes.",
+      "provenance": "expert_estimate"
+    },
+    "competition": {
+      "score": 76.5,
+      "basis": "MLS força média 76,5 em levantamento Opta de 03/11/2025 (fonte secundária 04/11/2025); não é média atual de 2026 nem ponderação individual por oponentes.",
+      "provenance": "expert_estimate"
+    },
+    "history": {
+      "score": 97,
+      "basis": "Histórico excepcional de criação e finalização em competições mais exigentes; ainda confirmado por 2025 e 2026, mas peso máximo limitado a 5%.",
+      "provenance": "expert_estimate"
+    }
+  },
+  "expected_index_rounded": 86,
+  "overall_target": 86,
+  "overall_game_verified": null,
+  "confidence": "moderate",
+  "position_attributes_status": "editorial_proposal_not_measured_not_in_game_validated",
+  "attributes": {
+    "attacking_prowess": 89,
+    "ball_control": 91,
+    "dribbling": 90,
+    "tight_possession": 90,
+    "low_pass": 88,
+    "lofted_pass": 86,
+    "finishing": 88,
+    "heading": 59,
+    "set_piece_taking": 87,
+    "curl": 89,
+    "speed": 71,
+    "acceleration": 75,
+    "kicking_power": 81,
+    "jump": 56,
+    "physical_contact": 67,
+    "balance": 89,
+    "stamina": 74,
+    "defensive_awareness": 43,
+    "ball_winning": 45,
+    "aggression": 47,
+    "gk_awareness": 40,
+    "gk_catching": 40,
+    "gk_clearing": 40,
+    "gk_reflexes": 40,
+    "gk_reach": 40
+  },
+  "other_pes_settings": {
+    "weak_foot_usage": 2,
+    "weak_foot_accuracy": 3,
+    "form": 7,
+    "injury_resistance": 2,
+    "inspiration": {
+      "carrying": 2,
+      "low_pass": 2,
+      "lofted_pass": 2
+    },
+    "special_skills_proposed": [
+      "Double Touch",
+      "One-touch Pass",
+      "Through Passing",
+      "Weighted Pass",
+      "Long Range Drive",
+      "Chip Shot Control",
+      "Outside Curler"
+    ],
+    "playing_style": "Creative Playmaker — candidato MAT; perfil real frequentemente PTD / falso 9",
+    "skills_pending_mapping": [
+      "As habilidades são candidatas; verificar repetição e execução no vídeo de 2026."
+    ]
+  },
+  "evidence_urls": {
+    "sofa_comparison": "https://www.sofascore.com/pt/football/player/compare?ids=12994",
+    "fotmob_2026": "https://www.fotmob.com/pt-BR/players/30981/lionel-messi",
+    "league_strength": "https://biz.chosun.com/en/en-sports/2025/11/04/XTVX4JYVHZDM5OLTSB6XJMUVVY/?outputType=amp",
+    "mls_history": "https://www.mlssoccer.com/players/lionel-messi/stats/",
+    "opta_2026": "https://theanalyst.com/players/10705/lionel-messi/stats"
+  },
+  "limitations": [
+    "Sofascore 2026 30 partidas/2574 min; FotMob e Opta em atualização mais recente exibem 31/2664min. Não misturar amostras.",
+    "Sofascore: 26g,13a,8,39, dribles 2,0/jogo a 51,3%; FotMob atualizado: 26g,13a, 1 gol de pênalti, 74 chances criadas, 62 dribles certos a 51,2%, 70 lançamentos certos a 66,0%. São conjuntos distintos de referência.",
+    "MLS C76,5 é snapshot 2025 secundário; Brasileirão C77,9 da mesma data, não comparar à referência Brasil 83,3 de jul/2026.",
+    "Velocidade 71 e aceleração 75 são estimativas Nível C: painel físico público Sofascore não forneceu tracking auditável por partida para esta ficha; sem conversão km/h em PES.",
+    "Drible 90 editorial; 93/94 corresponderia à avaliação histórica e não é inferido pelos 51,3% de 2026; contexto de nível MLS considerado sem coeficiente de conversão calibrado.",
+    "Forma 7 e resistência a lesões 2 são propostas, não diagnósticos; habilidade PES e estilo dependem de revisão de vídeo.",
+    "Ficha de equipe Fluminense é apenas liga personalizada do usuário. Clube real 2026: Inter Miami.",
+    "Overall-alvo não equivale ao Overall calculado pelo motor PES, que depende da posição MAT e pesos internos."
+  ],
+  "editorial_summary": "Messi (MLS 2026): Sofascore 30j/2574min, 26g+13a, rating 8,39, 2,0 dribles/jogo 51,3%; T88 D86 C76,5 H97 => índice 86,025 => OVR-alvo 86. Drible 90 por momento atual, não auge. Dados históricos e competição contextualizados."
+}

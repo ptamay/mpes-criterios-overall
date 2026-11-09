@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0.0",
+  "player": {
+    "slug": "luciano-acosta",
+    "name": "Luciano Federico Acosta",
+    "sofascore_player_id": 548030,
+    "club_as_of_snapshot": "Fluminense",
+    "position_pes": "MAT",
+    "preferred_foot": "right"
+  },
+  "snapshot_date": "2026-11-08",
+  "method_version": "1.0.0-experimental",
+  "record_status": "PROVISIONAL_EXPERT_ESTIMATE",
+  "competition_strength_calculation": "manual_approximation_not_minutes_weighted_opponent_sample",
+  "season_evidence": [
+    {
+      "season": "2023",
+      "club": "FC Cincinnati",
+      "competition": "MLS",
+      "scope": "domestic_league",
+      "matches": 36,
+      "minutes": 3007,
+      "goals": 19,
+      "assists": 12,
+      "source_key": "opta_career"
+    },
+    {
+      "season": "2024",
+      "club": "FC Cincinnati",
+      "competition": "MLS",
+      "scope": "domestic_league",
+      "matches": 35,
+      "minutes": 2977,
+      "goals": 14,
+      "assists": 17,
+      "source_key": "opta_career"
+    },
+    {
+      "season": "2025",
+      "club": "FC Dallas",
+      "competition": "MLS",
+      "scope": "domestic_league",
+      "matches": 21,
+      "minutes": 1696,
+      "goals": 5,
+      "assists": 1,
+      "source_key": "opta_career"
+    },
+    {
+      "season": "2025",
+      "club": "Fluminense",
+      "competition": "Brasileirão Série A",
+      "scope": "domestic_league",
+      "matches": 16,
+      "minutes": 1214,
+      "goals": 3,
+      "assists": 2,
+      "source_key": "opta_career"
+    },
+    {
+      "season": "2026",
+      "club": "Fluminense",
+      "competition": "Brasileirão Série A",
+      "scope": "domestic_league",
+      "matches": 29,
+      "minutes": 1623,
+      "goals": 6,
+      "assists": 5,
+      "source_key": "fotmob_2026"
+    }
+  ],
+  "dimensions": {
+    "technical": {
+      "score": 78,
+      "basis": "Controle curto, drible e criação muito bons; força física e jogo aéreo baixos. Não transformar habilidade com bola em velocidade sem bola.",
+      "provenance": "expert_estimate"
+    },
+    "performance": {
+      "score": 78,
+      "basis": "Brasileirão 2026: 6 gols, 5 assistências, 55 chances, 35 dribles certos em 1623 min; xG 6,18 e xA 4,88; histórico 2025 de Fluminense e Dallas. Médias Sofascore sazonais indisponíveis para conferência direta.",
+      "provenance": "expert_estimate"
+    },
+    "competition": {
+      "score": 83.3,
+      "basis": "Referência histórica da força média do Brasileirão para 2026; não equivale à dificuldade individual dos adversários. Dados de MLS em 2025 são contexto histórico, não bônus de liga da temporada atual.",
+      "provenance": "expert_estimate"
+    },
+    "history": {
+      "score": 86,
+      "basis": "MVP da MLS 2023 (17 gols/14 assistências em temporada regular, conforme MLS) e mais de uma temporada de criação consistente; histórico limita-se a 5% do índice, sem bônus por fama.",
+      "provenance": "expert_estimate"
+    }
+  },
+  "expected_index_rounded": 79,
+  "overall_target": 79,
+  "overall_game_verified": null,
+  "confidence": "moderate",
+  "position_attributes_status": "editorial_proposal_not_measured_not_in_game_validated",
+  "attributes": {
+    "attacking_prowess": 79,
+    "ball_control": 85,
+    "dribbling": 86,
+    "tight_possession": 86,
+    "low_pass": 82,
+    "lofted_pass": 78,
+    "finishing": 75,
+    "heading": 49,
+    "set_piece_taking": 76,
+    "curl": 79,
+    "speed": 73,
+    "acceleration": 79,
+    "kicking_power": 75,
+    "jump": 57,
+    "physical_contact": 54,
+    "balance": 89,
+    "stamina": 75,
+    "defensive_awareness": 49,
+    "ball_winning": 52,
+    "aggression": 58,
+    "gk_awareness": 40,
+    "gk_catching": 40,
+    "gk_clearing": 40,
+    "gk_reflexes": 40,
+    "gk_reach": 40
+  },
+  "other_pes_settings": {
+    "weak_foot_usage": 3,
+    "weak_foot_accuracy": 2,
+    "form": 5,
+    "injury_resistance": 2,
+    "inspiration": {
+      "carrying": 2,
+      "low_pass": 2,
+      "lofted_pass": 1
+    },
+    "special_skills_proposed": [
+      "Double Touch",
+      "One-touch Pass",
+      "Through Passing"
+    ],
+    "playing_style": "Creative Playmaker (proposta; confirmar no editor PES MAT)",
+    "skills_pending_mapping": [
+      "Habilidades são candidatas: não inferir execução individual apenas de contagens de drible/passe; observar partidas.",
+      "Estilo COM candidato: Mazing Run, Trickster (não são skills de jogador)."
+    ]
+  },
+  "evidence_urls": {
+    "sofascore": "https://www.sofascore.com/pt/football/player/luciano-acosta/548030",
+    "opta_career": "https://theanalyst.com/players/11152/lucho-acosta/career",
+    "fotmob_2026": "https://www.fotmob.com/players/521338/lucho-acosta",
+    "mls_mvp_2023": "https://www.mlssoccer.com/news/fc-cincinnati-s-luciano-lucho-acosta-named-2023-landon-donovan-mls-most-valuable",
+    "percentiles_2026": "https://moneyball-odds.com/players/luciano-acosta",
+    "opta_leagues": "https://theanalyst.com/articles/strongest-football-leagues-in-the-world-opta-power-rankings"
+  },
+  "limitations": [
+    "Overall-alvo 79 é proposta editorial, não é avaliação retornada pelo jogo.",
+    "A pontuação de força competitiva 83,3 é proxy histórica média da liga, não força dos adversários ponderada pelos minutos.",
+    "Opta Career registra em 2023 19 gols/12 assistências em 36 jogos, enquanto a MLS confirma 17 gols/14 assistências na temporada regular; fontes têm critérios de recorte diferentes. Não fundir esses totais.",
+    "2026: os 29 jogos/1.623 minutos e 6 gols/5 assistências provêm de snapshot FotMob 08/11/2026, enquanto o histórico Opta tem atraso de atualização.",
+    "55 chances, 35 dribles, 33 lançamentos precisos/66%, 9 cruzamentos certos/28,1% são recorte FotMob 2026. Passes longos e cruzamentos são ações diferentes.",
+    "Sofascore consultado para identidade e acompanhamento; média oficial sazonal 2026 e percentis Sofascore não extraídos de forma verificável. Não afirmar o contrário.",
+    "Sem velocidade máxima e tempos de aceleração rastreados; velocidade 73 e aceleração 79 são estimativas Nível C por indícios indiretos, não medições.",
+    "Forma física, pé fraco, resistência a lesões e habilidades especiais são estimativas sujeitas a validação de partidas/lesões.",
+    "Histórico de MVP 2023 não autoriza converter 2023 em atributos atuais; reputação tem somente 5%."
+  ],
+  "editorial_summary": "Luciano Acosta, 32 anos, Fluminense, meia MAT: Brasileirão 2026 29j/1623min, 6g/5a, 55 chances, 35 dribles certos e xA4,88 no FotMob; forte em criação/drible, pouca força física e defesa. MLS MVP em 2023 documentado, mas sem transportar auge para 2026. T78 D78 C83,3 H86 => índice79,195, arredondado 79; OVR alvo editorial 79. Sem tracking físico (speed73/acceleration79 Nível C), não verificado no PES."
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0.0",
+  "method_version": "1.0.0-experimental",
+  "record_status": "PROVISIONAL_EXPERT_ESTIMATE",
+  "player": {
+    "slug": "neymar",
+    "name": "Neymar",
+    "sofascore_player_id": 124712,
+    "club_as_of_snapshot": "Santos",
+    "position_pes": "MAT",
+    "preferred_foot": "right"
+  },
+  "snapshot_date": "2026-11-09",
+  "competition_strength_calculation": "manual_approximation_not_minutes_weighted_opponent_sample",
+  "season_evidence": [
+    {
+      "season": "2026",
+      "club": "Santos",
+      "competition": "Brasileirão Série A",
+      "scope": "domestic_league",
+      "matches": 14,
+      "minutes": 1178,
+      "goals": 8,
+      "assists": 3,
+      "source_key": "sofa_comparison"
+    }
+  ],
+  "dimensions": {
+    "technical": {
+      "score": 85,
+      "basis": "Ainda apresenta controle, drible, passe e habilidade de criar faltas, mas execução de dribles/precisão e condição física em 2026 não justificam manter a nota do auge; conjunto técnico-físico estimado.",
+      "provenance": "expert_estimate"
+    },
+    "performance": {
+      "score": 79,
+      "basis": "Sofascore Brasileirão 2026 14j/1178min: 8 gols, 3 assistências, rating 7,62, drible 1,4/jogo (33,3%). No recorte FotMob 15j/1223 min, 4 dos 8 gols são pênaltis; atuação eficaz quando disponível, mas baixa amostra e descontinuidade física.",
+      "provenance": "expert_estimate"
+    },
+    "competition": {
+      "score": 77.9,
+      "basis": "Brasileirão força média 77,9 no mesmo levantamento Opta de 03/11/2025 em que MLS 76,5; fonte secundária, não usar simultaneamente Brasil julho/2026=83,3.",
+      "provenance": "expert_estimate"
+    },
+    "history": {
+      "score": 92,
+      "basis": "Carreira de elite técnica e ofensiva na Europa e Brasil, valor histórico relevante mas limitado a 5% na fórmula; fase recente tem prioridade.",
+      "provenance": "expert_estimate"
+    }
+  },
+  "expected_index_rounded": 82,
+  "overall_target": 82,
+  "overall_game_verified": null,
+  "confidence": "moderate_low",
+  "position_attributes_status": "editorial_proposal_not_measured_not_in_game_validated",
+  "attributes": {
+    "attacking_prowess": 83,
+    "ball_control": 87,
+    "dribbling": 88,
+    "tight_possession": 85,
+    "low_pass": 82,
+    "lofted_pass": 79,
+    "finishing": 81,
+    "heading": 60,
+    "set_piece_taking": 84,
+    "curl": 83,
+    "speed": 75,
+    "acceleration": 78,
+    "kicking_power": 77,
+    "jump": 48,
+    "physical_contact": 64,
+    "balance": 82,
+    "stamina": 74,
+    "defensive_awareness": 43,
+    "ball_winning": 45,
+    "aggression": 50,
+    "gk_awareness": 40,
+    "gk_catching": 40,
+    "gk_clearing": 40,
+    "gk_reflexes": 40,
+    "gk_reach": 40
+  },
+  "other_pes_settings": {
+    "weak_foot_usage": 3,
+    "weak_foot_accuracy": 3,
+    "form": 4,
+    "injury_resistance": 1,
+    "inspiration": {
+      "carrying": 2,
+      "low_pass": 1,
+      "lofted_pass": 1
+    },
+    "special_skills_proposed": [
+      "Double Touch",
+      "Flip Flap",
+      "Marseille Turn",
+      "Gamesmanship",
+      "Through Passing",
+      "Outside Curler",
+      "Long Range Drive"
+    ],
+    "playing_style": "Creative Playmaker — candidato MAT; alternativas PTE/SA",
+    "skills_pending_mapping": [
+      "As habilidades são candidatas; verificar repetição e execução no vídeo de 2026."
+    ]
+  },
+  "evidence_urls": {
+    "sofa_comparison": "https://www.sofascore.com/pt/football/player/compare?ids=124712",
+    "fotmob_2026": "https://www.fotmob.com/pt-BR/players/19533/neymar",
+    "league_strength": "https://biz.chosun.com/en/en-sports/2025/11/04/XTVX4JYVHZDM5OLTSB6XJMUVVY/?outputType=amp",
+    "neymar_injury": "https://ge.globo.com/sp/santos-e-regiao/futebol/times/santos/noticia/2026/09/07/neymar-trabalha-na-academia-do-ct-do-santos-em-recuperacao-de-lesao-na-coxa-direita.ghtml"
+  },
+  "limitations": [
+    "Sofascore 2026 14 partidas/1178min, 8g/3a e rating 7,62; FotMob mais recente 15j/1223min. Não misturar métricas entre cortes.",
+    "FotMob 2026 informa 4 gols de pênalti entre 8, 35 chances criadas, 19 dribles certos, 32,8% e 24/45 bolas longas. Gols totais não determinam finalização em jogo corrido.",
+    "A taxa de drible no Brasileirão enfrenta oponentes mais fortes em média que MLS 2025, mas não existe coeficiente validado para compará-la diretamente ao Messi; estimativa Neymar 88 pondera trajetória técnica sem reproduzir auge.",
+    "Sem top speed/tempo de arrancada Sofascore auditável, velocidade 75 e aceleração 78 são Nível C, estimativas indiretas.",
+    "Neymar teve lesão muscular na coxa em setembro 2026; continuidade 2026 reduz D e sugere forma 4 e resistência lesões 1; form e resistência são propostas, não medições médicas.",
+    "Parte das habilidades do PES depende de vídeo de 2026. Não atribuir todas como confirmadas automaticamente.",
+    "Time Botafogo é apenas clube do patch/liga personalizada; clube real 2026: Santos.",
+    "Overall-alvo editorial e não testado no motor PES MAT. Dados do Sofascore/fotmob em cortes diferentes."
+  ],
+  "editorial_summary": "Neymar (Brasileirão 2026): Sofascore 14j/1178min, 8g+3a, rating 7,62, 1,4 dribles certos/jogo a 33,3%. FotMob 15j/1223min: 4 gols de pênalti. T85 D79 C77,9 H92 => índice 82,185 => OVR-alvo 82. Drible 88 no momento atual, não 93 de seu auge."
+}

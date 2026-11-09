@@ -1,0 +1,42 @@
+{
+  "version": "1.9.0-experimental",
+  "method": "Opta Power Rankings league rating; source secondary news referencing Opta, not primary raw Opta feed",
+  "status": "HISTORICAL_SECONDARY_SOURCE_VERIFIED_NOT_CURRENT_2026",
+  "historical_snapshot": {
+    "date": "2025-11-03",
+    "published": "2025-11-04",
+    "source_url": "https://biz.chosun.com/en/en-sports/2025/11/04/XTVX4JYVHZDM5OLTSB6XJMUVVY/?outputType=amp",
+    "china_csl": {
+      "rating": 62.8,
+      "reported_world_rank": 102
+    },
+    "brazil_serie_a": {
+      "rating": 77.9,
+      "reported_world_rank": 8
+    },
+    "other_2025_leagues": {
+      "premier_league": 90.9,
+      "mls": 76.5,
+      "saudi_pro_league": 72.9
+    },
+    "delta_brazil_minus_china": 15.1
+  },
+  "different_date_reference_not_directly_comparable": {
+    "date": "2026-07-27",
+    "brazil_serie_a": 83.3,
+    "source_url": "https://theanalyst.com/articles/strongest-football-leagues-in-the-world-opta-power-rankings"
+  },
+  "approved_policy": {
+    "chinese_league_default_C_when_no_current_same_snapshot_rating": 62.8,
+    "default_provenance": "historical_league_average_proxy_secondary_source",
+    "editorial_conservative_scenario_C": 60.0,
+    "conservative_is_official_opta": false,
+    "current_2026_china_score_available": false,
+    "opponent_minute_weighted_preferred": true,
+    "replace_when_current_primary_comparable_available": true,
+    "do_not_mix_years": true,
+    "technical_action_stats_require_opposition_context": true,
+    "transfer_coefficients_calibrated": false,
+    "double_penalty_audit_required": true
+  }
+}

@@ -1,0 +1,524 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ptamay/pes21-criterios-overall/blob/main/schema/assessment.schema.json",
+  "title": "Ficha de avaliação experimental PES 2021",
+  "description": "Validate editorial traceability and completeness. Does NOT verify the Konami engine OVR.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "player",
+    "snapshot_date",
+    "method_version",
+    "record_status",
+    "competition_strength_calculation",
+    "season_evidence",
+    "dimensions",
+    "expected_index_rounded",
+    "overall_target",
+    "overall_game_verified",
+    "confidence",
+    "position_attributes_status",
+    "attributes",
+    "other_pes_settings",
+    "evidence_urls",
+    "limitations",
+    "editorial_summary"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "player": {
+      "type": "object",
+      "required": [
+        "slug",
+        "name",
+        "sofascore_player_id",
+        "club_as_of_snapshot",
+        "position_pes",
+        "preferred_foot"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "slug": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "sofascore_player_id": {
+          "type": "integer"
+        },
+        "club_as_of_snapshot": {
+          "type": "string"
+        },
+        "position_pes": {
+          "type": "string"
+        },
+        "preferred_foot": {
+          "enum": [
+            "right",
+            "left"
+          ]
+        }
+      }
+    },
+    "snapshot_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "method_version": {
+      "const": "1.0.0-experimental"
+    },
+    "record_status": {
+      "const": "PROVISIONAL_EXPERT_ESTIMATE"
+    },
+    "competition_strength_calculation": {
+      "enum": [
+        "manual_approximation_not_minutes_weighted_opponent_sample",
+        "minutes_weighted_verified"
+      ]
+    },
+    "season_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "season",
+          "club",
+          "competition",
+          "scope",
+          "matches",
+          "minutes",
+          "goals",
+          "assists",
+          "source_key"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "season": {
+            "type": "string"
+          },
+          "club": {
+            "type": "string"
+          },
+          "competition": {
+            "type": "string"
+          },
+          "scope": {
+            "enum": [
+              "domestic_league",
+              "club_all_competitions"
+            ]
+          },
+          "matches": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "minutes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "goals": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "assists": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "source_key": {
+            "type": "string"
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "dimensions": {
+      "type": "object",
+      "required": [
+        "technical",
+        "performance",
+        "competition",
+        "history"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "technical": {
+          "type": "object",
+          "required": [
+            "score",
+            "basis",
+            "provenance"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "score": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "basis": {
+              "type": "string",
+              "minLength": 12
+            },
+            "provenance": {
+              "const": "expert_estimate"
+            }
+          }
+        },
+        "performance": {
+          "type": "object",
+          "required": [
+            "score",
+            "basis",
+            "provenance"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "score": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "basis": {
+              "type": "string",
+              "minLength": 12
+            },
+            "provenance": {
+              "const": "expert_estimate"
+            }
+          }
+        },
+        "competition": {
+          "type": "object",
+          "required": [
+            "score",
+            "basis",
+            "provenance"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "score": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "basis": {
+              "type": "string",
+              "minLength": 12
+            },
+            "provenance": {
+              "const": "expert_estimate"
+            }
+          }
+        },
+        "history": {
+          "type": "object",
+          "required": [
+            "score",
+            "basis",
+            "provenance"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "score": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "basis": {
+              "type": "string",
+              "minLength": 12
+            },
+            "provenance": {
+              "const": "expert_estimate"
+            }
+          }
+        }
+      }
+    },
+    "expected_index_rounded": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "overall_target": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "overall_game_verified": {
+      "type": "null"
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "moderate",
+        "moderate_low",
+        "low"
+      ]
+    },
+    "position_attributes_status": {
+      "const": "editorial_proposal_not_measured_not_in_game_validated"
+    },
+    "attributes": {
+      "type": "object",
+      "required": [
+        "attacking_prowess",
+        "ball_control",
+        "dribbling",
+        "tight_possession",
+        "low_pass",
+        "lofted_pass",
+        "finishing",
+        "heading",
+        "set_piece_taking",
+        "curl",
+        "speed",
+        "acceleration",
+        "kicking_power",
+        "jump",
+        "physical_contact",
+        "balance",
+        "stamina",
+        "defensive_awareness",
+        "ball_winning",
+        "aggression",
+        "gk_awareness",
+        "gk_catching",
+        "gk_clearing",
+        "gk_reflexes",
+        "gk_reach"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "attacking_prowess": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "ball_control": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "dribbling": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "tight_possession": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "low_pass": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "lofted_pass": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "finishing": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "heading": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "set_piece_taking": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "curl": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "speed": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "acceleration": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "kicking_power": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "jump": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "physical_contact": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "balance": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "stamina": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "defensive_awareness": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "ball_winning": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "aggression": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "gk_awareness": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "gk_catching": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "gk_clearing": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "gk_reflexes": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "gk_reach": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        }
+      }
+    },
+    "other_pes_settings": {
+      "type": "object",
+      "required": [
+        "weak_foot_usage",
+        "weak_foot_accuracy",
+        "form",
+        "injury_resistance",
+        "inspiration",
+        "special_skills_proposed",
+        "playing_style"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "weak_foot_usage": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "weak_foot_accuracy": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "form": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8
+        },
+        "injury_resistance": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "inspiration": {
+          "type": "object",
+          "required": [
+            "carrying",
+            "low_pass",
+            "lofted_pass"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "carrying": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 2
+            },
+            "low_pass": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 2
+            },
+            "lofted_pass": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 2
+            }
+          }
+        },
+        "special_skills_proposed": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "playing_style": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "skills_pending_mapping": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Sugestões não validadas/correspondência não encontrada no catálogo do PES 2021. Não aplicar automaticamente."
+        }
+      }
+    },
+    "evidence_urls": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "editorial_summary": {
+      "type": "string",
+      "minLength": 12
+    }
+  }
+}

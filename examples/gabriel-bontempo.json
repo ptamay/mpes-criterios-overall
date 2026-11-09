@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0.0",
+  "player": {
+    "slug": "gabriel-bontempo",
+    "name": "Gabriel Bontempo",
+    "sofascore_player_id": 1656036,
+    "club_as_of_snapshot": "Santos",
+    "position_pes": "MLG",
+    "preferred_foot": "right"
+  },
+  "snapshot_date": "2026-11-08",
+  "method_version": "1.0.0-experimental",
+  "record_status": "PROVISIONAL_EXPERT_ESTIMATE",
+  "competition_strength_calculation": "manual_approximation_not_minutes_weighted_opponent_sample",
+  "season_evidence": [
+    {
+      "season": "2026",
+      "club": "Santos",
+      "competition": "Brasileirão Série A",
+      "scope": "domestic_league",
+      "matches": 30,
+      "minutes": 2090,
+      "goals": 1,
+      "assists": 3,
+      "source_key": "fotmob_2026"
+    },
+    {
+      "season": "2025",
+      "club": "Santos",
+      "competition": "Brasileirão Série A",
+      "scope": "domestic_league",
+      "matches": 25,
+      "minutes": 1020,
+      "goals": 2,
+      "assists": 1,
+      "source_key": "history_2025"
+    }
+  ],
+  "dimensions": {
+    "technical": {
+      "score": 76,
+      "basis": "Bontempo circula melhor a bola: 87,1% precisão geral e 908 passes completos em 2.090 min; drible 28 certos (56%), menor que Montoro; contribuição defensiva maior. Velocidade/aceleração SEM rastreamento, estimativas Nível C.",
+      "provenance": "expert_estimate"
+    },
+    "performance": {
+      "score": 74,
+      "basis": "2026 Série A: 30 jogos, 2.090 min, 1 gol, 3 assistências; 45 chances, 3,36 xA, 30 chutes/2,69 xG. Sofascore compilado Driblou 6,83 em recorte diferente: 29 jogos/2.020 min; não misturar esse recorte com totais FotMob.",
+      "provenance": "expert_estimate"
+    },
+    "competition": {
+      "score": 83.3,
+      "basis": "Brasileirão 2026: mesma força média de referência histórica (proxy datado julho/2026) utilizada para Montoro, não adversários individuais.",
+      "provenance": "expert_estimate"
+    },
+    "history": {
+      "score": 71,
+      "basis": "2025 Série A: 25 jogos, 1.020 minutos, 2 gols e 1 assistência; amostra profissional curta, sem bônus de potencial/reputação.",
+      "provenance": "expert_estimate"
+    }
+  },
+  "expected_index_rounded": 76,
+  "overall_target": 76,
+  "overall_game_verified": null,
+  "confidence": "moderate",
+  "position_attributes_status": "editorial_proposal_not_measured_not_in_game_validated",
+  "attributes": {
+    "attacking_prowess": 75,
+    "ball_control": 79,
+    "dribbling": 79,
+    "tight_possession": 77,
+    "low_pass": 79,
+    "lofted_pass": 70,
+    "finishing": 66,
+    "heading": 63,
+    "set_piece_taking": 61,
+    "curl": 69,
+    "speed": 74,
+    "acceleration": 77,
+    "kicking_power": 72,
+    "jump": 68,
+    "physical_contact": 72,
+    "balance": 77,
+    "stamina": 79,
+    "defensive_awareness": 65,
+    "ball_winning": 67,
+    "aggression": 65,
+    "gk_awareness": 40,
+    "gk_catching": 40,
+    "gk_clearing": 40,
+    "gk_reflexes": 40,
+    "gk_reach": 40
+  },
+  "other_pes_settings": {
+    "weak_foot_usage": 3,
+    "weak_foot_accuracy": 2,
+    "form": 5,
+    "injury_resistance": 2,
+    "inspiration": {
+      "carrying": 1,
+      "low_pass": 1,
+      "lofted_pass": 0
+    },
+    "special_skills_proposed": [],
+    "playing_style": "Box-to-Box (candidato na posição MLG; depende do registro de atuação no jogo)",
+    "skills_pending_mapping": [
+      "One-touch Pass e Through Passing não adicionados sem vídeo que comprove sua execução sistemática",
+      "Pé fraco uso 3 é hipótese: 12 chutes com pé esquerdo e 16 com direito no FotMob Série A 2026, não valida todo o repertório de passes.",
+      "A definição de estilo deve considerar que Bontempo jogou também aberto pela direita em 2026."
+    ]
+  },
+  "evidence_urls": {
+    "sofascore": "https://www.sofascore.com/pt/football/player/gabriel-bontempo/1656036",
+    "driblou_sofascore": "https://www.driblou.com.br/data/jogador/gabriel-bontempo-1656036",
+    "fotmob_2026": "https://www.fotmob.com/pt-BR/players/1712138",
+    "history_2025": "https://scoremondo.com/pt/jogador/gabriel-bontempo-23293",
+    "opta_leagues": "https://theanalyst.com/articles/strongest-football-leagues-in-the-world-opta-power-rankings"
+  },
+  "limitations": [
+    "Não localizada página Opta Analyst histórica individual com tabela legível no corte para Bontempo; 2025 confirmado por fonte secundária. Não declarar pesquisa Opta individual completa.",
+    "FotMob 2026: 30 jogos/2.090 min, 1 gol/3 assistências. Driblou Data/Sofascore apresentou outro recorte 29 jogos/2.020 min e média 6,83. Não fundir como se mesmo corte.",
+    "Velocidade 74 [71,77] e aceleração 77 [74,80] são Nível C, estimativas por proxies técnicos. Não foi encontrada medição de pico/Time to Sprint.",
+    "Percentis por posição 2026: passes decisivos ~80, dribles certos ~75, desarmes ~57. Percentis Sofascore não são equivalentes à escala do PES.",
+    "Passe rasteiro 79 e passe alto 70 são propostas editoriais: FotMob 87,1% de passes, 16 longos certos (47,1%) e 9 cruzamentos certos (21,4%); não tratar porcentagem bruta como atributo PES.",
+    "Uso do pé fraco 3 é somente hipótese de edição com base em 12 finalizações de pé esquerdo de 30; precisão do pé fraco não verificada.",
+    "Overall-alvo 76 editorial e não testado no motor PES. Habilidades pendentes de prova audiovisual."
+  ],
+  "editorial_summary": "MLG com versatilidade na direita, circulação 87,1% de acerto, 45 chances criadas e 40 desarmes; inferior a Montoro em dribles, superior em distribuição e ações defensivas. OVR editorial 76, índice 76,145; speed74/accel77 Nível C; PES in-game não verificado."
+}

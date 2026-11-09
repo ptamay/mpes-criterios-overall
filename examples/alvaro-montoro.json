@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0.0",
+  "player": {
+    "slug": "alvaro-montoro",
+    "name": "Álvaro Montoro",
+    "sofascore_player_id": 1650770,
+    "club_as_of_snapshot": "Botafogo",
+    "position_pes": "MAT",
+    "preferred_foot": "right"
+  },
+  "snapshot_date": "2026-11-08",
+  "method_version": "1.0.0-experimental",
+  "record_status": "PROVISIONAL_EXPERT_ESTIMATE",
+  "competition_strength_calculation": "manual_approximation_not_minutes_weighted_opponent_sample",
+  "season_evidence": [
+    {
+      "season": "2026",
+      "club": "Botafogo",
+      "competition": "Brasileirão Série A",
+      "scope": "domestic_league",
+      "matches": 28,
+      "minutes": 1867,
+      "goals": 1,
+      "assists": 5,
+      "source_key": "fotmob_2026"
+    },
+    {
+      "season": "2025",
+      "club": "Botafogo",
+      "competition": "Brasileirão Série A",
+      "scope": "domestic_league",
+      "matches": 16,
+      "minutes": 940,
+      "goals": 3,
+      "assists": 3,
+      "source_key": "opta_career"
+    },
+    {
+      "season": "2025",
+      "club": "Vélez Sarsfield",
+      "competition": "Liga Profesional Argentina",
+      "scope": "domestic_league",
+      "matches": 12,
+      "minutes": 692,
+      "goals": 0,
+      "assists": 0,
+      "source_key": "opta_career"
+    }
+  ],
+  "dimensions": {
+    "technical": {
+      "score": 79,
+      "basis": "Comparação pelo mesmo grupo de meio-campistas Brasileirão 2026: 2,46 dribles certos/90 (P96) e 58% de acerto; destaque em domínio/progressão. Precisão de passe 79,9% (P13), volume e taxa de perdas impedem elevar habilidade de passe. Não há rastreamento para velocidade/aceleração.",
+      "provenance": "expert_estimate"
+    },
+    "performance": {
+      "score": 76,
+      "basis": "28 partidas/1.867 min, 1 gol e 5 assistências; 34 chances criadas, 3,03 xA, 51 dribles certos. Nota 6,89 compilada pelo Driblou/Sofascore. Ofensividade e criação acima da média, finalização 1 gol frente a 1,77 xG e nota oscila; comparação Bontempo no mesmo Brasileirão.",
+      "provenance": "expert_estimate"
+    },
+    "competition": {
+      "score": 83.3,
+      "basis": "Proxy pela força média do Brasileirão na tabela histórica de julho/2026 da metodologia, não pelos adversários efetivamente enfrentados.",
+      "provenance": "expert_estimate"
+    },
+    "history": {
+      "score": 73,
+      "basis": "Em 2025 pelo Botafogo foram 3 gols e 3 assistências em 940 minutos no Brasileiro, mais passagem pelo Vélez. Ainda sem temporadas sustentadas de elite.",
+      "provenance": "expert_estimate"
+    }
+  },
+  "expected_index_rounded": 78,
+  "overall_target": 78,
+  "overall_game_verified": null,
+  "confidence": "moderate",
+  "position_attributes_status": "editorial_proposal_not_measured_not_in_game_validated",
+  "attributes": {
+    "attacking_prowess": 77,
+    "ball_control": 82,
+    "dribbling": 85,
+    "tight_possession": 82,
+    "low_pass": 74,
+    "lofted_pass": 72,
+    "finishing": 68,
+    "heading": 53,
+    "set_piece_taking": 65,
+    "curl": 73,
+    "speed": 77,
+    "acceleration": 81,
+    "kicking_power": 72,
+    "jump": 62,
+    "physical_contact": 60,
+    "balance": 83,
+    "stamina": 77,
+    "defensive_awareness": 52,
+    "ball_winning": 52,
+    "aggression": 57,
+    "gk_awareness": 40,
+    "gk_catching": 40,
+    "gk_clearing": 40,
+    "gk_reflexes": 40,
+    "gk_reach": 40
+  },
+  "other_pes_settings": {
+    "weak_foot_usage": 2,
+    "weak_foot_accuracy": 2,
+    "form": 5,
+    "injury_resistance": 2,
+    "inspiration": {
+      "carrying": 2,
+      "low_pass": 1,
+      "lofted_pass": 0
+    },
+    "special_skills_proposed": [
+      "Double Touch"
+    ],
+    "playing_style": "Creative Playmaker (proposta para MAT; validação pendente)",
+    "skills_pending_mapping": [
+      "Double Touch é habilidade CANDIDATA sem revisão de partidas gravadas; não aplicar automaticamente",
+      "Through Passing removido da sugestão automática: cinco assistências não provam execução recorrente do movimento específico",
+      "COM Mazing Run candidato sem comprovação em vídeo"
+    ]
+  },
+  "evidence_urls": {
+    "sofascore": "https://www.sofascore.com/pt/football/player/alvaro-montoro/1650770",
+    "driblou_sofascore": "https://www.driblou.com.br/data/jogador/alvaro-montoro-1650770",
+    "fotmob_2026": "https://www.fotmob.com/players/1607035/alvaro-montoro",
+    "opta_career": "https://theanalyst.com/players/11189/alvaro-montoro/career",
+    "opta_stats": "https://theanalyst.com/players/11189/alvaro-montoro/stats",
+    "injury_2026": "https://ge.globo.com/futebol/times/botafogo/noticia/2026/10/07/botafogo-informa-lesao-de-montoro-que-vira-desfalque-em-classico-contra-o-vasco.ghtml",
+    "injury_2025": "https://www.transfermarkt.com/alvaro-montoro/verletzungen/spieler/1228194",
+    "opta_leagues": "https://theanalyst.com/articles/strongest-football-leagues-in-the-world-opta-power-rankings",
+    "fotmob_pt": "https://www.fotmob.com/pt-BR/players/1607035/alvaro-montoro"
+  },
+  "limitations": [
+    "Dados de 2026 variam por atualização: perfil Opta Career capturado em outro corte tem 25-27 jogos e menos minutos; recorte 28 jogos/1867 min é do FotMob/Driblou e NÃO foi combinado com temporada anterior da mesma base sem sinalizar fontes.",
+    "Nota Sofascore de 6,89 obtida via compilação Driblou; não extraída diretamente do seletor interativo por temporada do Sofascore.",
+    "Velocidade 77 e aceleração 81 são estimativas Nível C, por evidências INDIRETAS de drible/mobilidade e NÃO km/h e m/s² medidos; faixas plausíveis 74-80 e 77-84, respectivamente.",
+    "Não foram encontrados dados públicos físicos de pico de velocidade ou Time to Sprint. Não qualifica nível A.",
+    "Ligações entre dribles e aceleração são fracas; dados técnicos não identificam a velocidade sem bola.",
+    "Sem percentis normatizados completos por posição e com diferenças por competição; quatro scores são julgamentos editoriais.",
+    "Overall-alvo 78 ainda não reproduzido no motor PES; habilidades e parâmetros especiais são provisórios.",
+    "Revisão comparativa 08/11/2026: Montoro tem percentil 13 na precisão geral de passes (79,9%), apesar de 5 assistências; passe rasteiro ajustado de 76 para 74; passe alto de 71 para 72 por volume de bolas longas, de forma conservadora.",
+    "Percentis do Driblou são por posição e amostra variável; NÃO representam atributos PES. Desempenho técnico e velocidade física são coisas distintas.",
+    "Ajustes drible 84->85, condução firme 83->82 e talento defensivo 51->52 são interpretações editoriais, não saída de algoritmo calibrado."
+  ],
+  "editorial_summary": "MAT criativo PTE alternativo: 2,46 dribles certos/90 P96, 5 assistências em 1.867 min; baixa precisão geral do passe P13. Perfil mais driblador que Bontempo, porém menos distribuidor e marcador. OVR editorial 78, índice 78,295; speed77/accel81 nível C; PES in-game não verificado."
+}

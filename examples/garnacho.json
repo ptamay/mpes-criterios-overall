@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0.0",
+  "player": {
+    "slug": "garnacho",
+    "name": "Alejandro Garnacho",
+    "sofascore_player_id": 1135873,
+    "club_as_of_snapshot": "Aston Villa (empréstimo do Chelsea)",
+    "position_pes": "PTE",
+    "preferred_foot": "right"
+  },
+  "snapshot_date": "2026-11-07",
+  "method_version": "1.0.0-experimental",
+  "record_status": "PROVISIONAL_EXPERT_ESTIMATE",
+  "competition_strength_calculation": "manual_approximation_not_minutes_weighted_opponent_sample",
+  "season_evidence": [
+    {
+      "season": "2025/26",
+      "club": "Chelsea",
+      "competition": "Premier League",
+      "scope": "domestic_league",
+      "matches": 24,
+      "minutes": 1268,
+      "goals": 1,
+      "assists": 4,
+      "source_key": "opta_career"
+    },
+    {
+      "season": "2025/26",
+      "club": "Chelsea",
+      "competition": "Todas as competições de clubes",
+      "scope": "club_all_competitions",
+      "matches": 43,
+      "minutes": 2397,
+      "goals": 8,
+      "assists": 4,
+      "source_key": "chelsea_season_review"
+    },
+    {
+      "season": "2026/27",
+      "club": "Aston Villa",
+      "competition": "Premier League",
+      "scope": "domestic_league",
+      "matches": 4,
+      "minutes": 34,
+      "goals": 0,
+      "assists": 0,
+      "source_key": "opta_career"
+    }
+  ],
+  "dimensions": {
+    "technical": {
+      "score": 77,
+      "basis": "Arrancada, velocidade e drible como forças; decisão e finalização ainda abaixo da elite.",
+      "provenance": "expert_estimate"
+    },
+    "performance": {
+      "score": 73,
+      "basis": "Na Premier League 2025/26: 1 gol e 4 assistências em 1.268 minutos; maior produção em todas as competições. 2026/27 tem amostra irrisória.",
+      "provenance": "expert_estimate"
+    },
+    "competition": {
+      "score": 92,
+      "basis": "Premier League 92,0 como proxy de liga, NÃO adversários efetivamente ponderados.",
+      "provenance": "expert_estimate"
+    },
+    "history": {
+      "score": 77,
+      "basis": "Histórico de Premier League sem protagonismo consolidado no patamar da elite.",
+      "provenance": "expert_estimate"
+    }
+  },
+  "expected_index_rounded": 78,
+  "overall_target": 78,
+  "overall_game_verified": null,
+  "confidence": "moderate",
+  "position_attributes_status": "editorial_proposal_not_measured_not_in_game_validated",
+  "attributes": {
+    "attacking_prowess": 78,
+    "ball_control": 81,
+    "dribbling": 83,
+    "tight_possession": 80,
+    "low_pass": 75,
+    "lofted_pass": 72,
+    "finishing": 76,
+    "heading": 58,
+    "set_piece_taking": 64,
+    "curl": 77,
+    "speed": 86,
+    "acceleration": 85,
+    "kicking_power": 79,
+    "jump": 70,
+    "physical_contact": 67,
+    "balance": 79,
+    "stamina": 79,
+    "defensive_awareness": 48,
+    "ball_winning": 49,
+    "aggression": 60,
+    "gk_awareness": 40,
+    "gk_catching": 40,
+    "gk_clearing": 40,
+    "gk_reflexes": 40,
+    "gk_reach": 40
+  },
+  "other_pes_settings": {
+    "weak_foot_usage": 2,
+    "weak_foot_accuracy": 2,
+    "form": 5,
+    "injury_resistance": 2,
+    "inspiration": {
+      "carrying": 1,
+      "low_pass": 0,
+      "lofted_pass": 0
+    },
+    "special_skills_proposed": [
+      "Double Touch",
+      "Acrobatic Finishing",
+      "Long Range Shooting"
+    ],
+    "playing_style": null,
+    "skills_pending_mapping": [
+      "Controle de domínio: nomenclatura/mapeamento de habilidade ainda não confirmados no editor"
+    ]
+  },
+  "evidence_urls": {
+    "sofascore": "https://www.sofascore.com/pt/football/player/alejandro-garnacho/1135873",
+    "opta_career": "https://theanalyst.com/players/4179/alejandro-garnacho/career",
+    "chelsea_profile": "https://www.chelseafc.com/en/teams/profile/alejandro-garnacho",
+    "chelsea_season_review": "https://www.chelseafc.com/en/news/article/chelsea-2025-26-revisited-forwards",
+    "opta_leagues": "https://theanalyst.com/articles/strongest-football-leagues-in-the-world-opta-power-rankings"
+  },
+  "limitations": [
+    "Sem percentis por posição completos; 60/25/15 ainda não aplicado numericamente.",
+    "Notas individuais de atributos são parecer editorial, não valores medidos.",
+    "OVR 78 não foi confirmado pela fórmula interna do PES 2021."
+  ],
+  "editorial_summary": "Ponta de desequilíbrio e progressão; sem provas suficientes para 80+. Faixa editorial 77–79."
+}

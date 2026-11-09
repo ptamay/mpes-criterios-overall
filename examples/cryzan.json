@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0.0",
+  "player": {
+    "slug": "cryzan",
+    "name": "Cryzan da Cruz Queiroz Barcelos",
+    "sofascore_player_id": 794884,
+    "club_as_of_snapshot": "Shandong Taishan",
+    "position_pes": "CA",
+    "preferred_foot": "right"
+  },
+  "snapshot_date": "2026-11-08",
+  "method_version": "1.0.0-experimental",
+  "record_status": "PROVISIONAL_EXPERT_ESTIMATE",
+  "competition_strength_calculation": "historical_2025_11_03_opta_secondary_proxy_62_8; 60_editorial_conservative_sensitivity; 2026_csl_current_not_verified",
+  "season_evidence": [
+    {
+      "season": "2024",
+      "club": "Shandong Taishan",
+      "competition": "Chinese Super League",
+      "scope": "domestic_league",
+      "matches": 24,
+      "minutes": 1722,
+      "goals": 11,
+      "assists": 4,
+      "source_key": "fbref_career"
+    },
+    {
+      "season": "2025",
+      "club": "Shandong Taishan",
+      "competition": "Chinese Super League",
+      "scope": "domestic_league",
+      "matches": 27,
+      "minutes": 2367,
+      "goals": 11,
+      "assists": 9,
+      "source_key": "fbref_career"
+    },
+    {
+      "season": "2026",
+      "club": "Shandong Taishan",
+      "competition": "Chinese Super League",
+      "scope": "domestic_league",
+      "matches": 24,
+      "minutes": 1931,
+      "goals": 20,
+      "assists": 9,
+      "source_key": "fotmob_latest_2026",
+      "snapshot_note": "FotMob resultado atualizado para incluir jogo de 08/11 vs Chengdu; página detalhada em cache ainda podia mostrar recorte 23 partidas/1841 min/19 gols. Não misturar amostras."
+    }
+  ],
+  "dimensions": {
+    "technical": {
+      "score": 78,
+      "basis": "Reavaliação contextual ao nível do Brasileirão de dribles, finalização, passe, jogo aéreo e força em duelos. Evidências 2026 do FotMob comprovam produção expressiva na CSL, mas percentis intraliga não convertem automaticamente em PES. Contato físico 83→80 pela combinação de evidência insuficiente de força de elite e êxito nos duelos aéreos apenas ~54%, NÃO por redutor automático do país. Atributos físicos velocidade/aceleração/potência/impulsão não são descontados pela liga.",
+      "provenance": "expert_estimate"
+    },
+    "performance": {
+      "score": 82,
+      "basis": "Produção/regularidade elevada dentro da Superliga Chinesa: recorte atualizado 2026 24 partidas, 20g/9a em 1931min, 90 dribles certos e 58 chances (FotMob). D avalia somente rendimento observado na liga; não é suposta previsão de 20g no Brasileirão nem segundo redutor quantitativo de força.",
+      "provenance": "expert_estimate"
+    },
+    "competition": {
+      "score": 62.8,
+      "basis": "Referência histórica de média da Superliga Chinesa 62,8, informada em matéria de 04/11/2025 sobre Opta Power Rankings (snapshot 03/11/2025). Fonte SECUNDÁRIA, não atual de 2026, e não strength ponderado por adversário. Cenário conservador C60 é editorial; comparação com Brasil 77,9 somente no mesmo snapshot 2025.",
+      "provenance": "expert_estimate"
+    },
+    "history": {
+      "score": 77,
+      "basis": "Produção sustentada 2024/25 na China, mais 14 gols e 9 assistências em 58 jogos pelo Santa Clara no futebol português em períodos históricos, com passagem anterior curta pelo Athletico-PR. Evidência histórica não estabelece dominância no Brasileirão atual.",
+      "provenance": "expert_estimate"
+    }
+  },
+  "expected_index_rounded": 77,
+  "overall_target": 77,
+  "overall_game_verified": null,
+  "confidence": "low_to_moderate",
+  "position_attributes_status": "v1_9_contextualized_editorial_not_calibrated_no_direct_tracking_no_in_game_verification",
+  "attributes": {
+    "attacking_prowess": 78,
+    "ball_control": 79,
+    "dribbling": 80,
+    "tight_possession": 77,
+    "low_pass": 74,
+    "lofted_pass": 72,
+    "finishing": 78,
+    "heading": 73,
+    "set_piece_taking": 70,
+    "curl": 72,
+    "speed": 78,
+    "acceleration": 77,
+    "kicking_power": 83,
+    "jump": 78,
+    "physical_contact": 80,
+    "balance": 76,
+    "stamina": 81,
+    "defensive_awareness": 48,
+    "ball_winning": 50,
+    "aggression": 69,
+    "gk_awareness": 40,
+    "gk_catching": 40,
+    "gk_clearing": 40,
+    "gk_reflexes": 40,
+    "gk_reach": 40
+  },
+  "other_pes_settings": {
+    "weak_foot_usage": 3,
+    "weak_foot_accuracy": 3,
+    "form": 6,
+    "injury_resistance": 2,
+    "inspiration": {
+      "carrying": 2,
+      "low_pass": 1,
+      "lofted_pass": 1
+    },
+    "special_skills_proposed": [
+      "First-time Shot",
+      "Heading",
+      "Penalty Specialist",
+      "Gamesmanship"
+    ],
+    "playing_style": "Target Man (candidato no CA) / alternativa perfil móvel e criador, exige validação tática observacional; não inferir estilo pela altura apenas",
+    "skills_pending_mapping": [
+      "4 habilidades são candidatas e NÃO verificadas em vídeo; converter em skills definitivas apenas quando observadas.",
+      "Estilos COM sugeridos: Mazing Run e Long Ranger (candidatos, distintos de habilidades de jogador)."
+    ]
+  },
+  "evidence_urls": {
+    "sofascore": "https://www.sofascore.com/pt/football/player/cryzan/794884",
+    "fbref_career": "https://fbref.com/en/players/70acbadc/Cryzan",
+    "fbref_2026": "https://fbref.com/en/players/70acbadc/matchlogs/2026/Crysan-Match-Logs",
+    "fotmob_2026": "https://www.fotmob.com/players/637316/cryzan",
+    "opta_league_method": "https://theanalyst.com/articles/strongest-football-leagues-in-the-world-opta-power-rankings",
+    "afc_reference": "https://www.the-afc.com/en/club/afc_champions_league_elite.html/news/cryzan-takes-aclelite-md3-east-best-goal-honour",
+    "fotmob_latest_2026": "https://www.fotmob.com/players/637316",
+    "competition_2025_11_03_opta_secondary": "https://biz.chosun.com/en/en-sports/2025/11/04/XTVX4JYVHZDM5OLTSB6XJMUVVY/?outputType=amp"
+  },
+  "limitations": [
+    "REFERÊNCIA COMPETITIVA v1.9: China C62,8 é score histórico de 03/11/2025, noticiado por fonte secundária em 04/11/2025 como baseado na Opta; NÃO representa rating contemporâneo de 2026. Brasil 77,9 consta no mesmo snapshot; 83,3 é Brasil julho 2026 e não deve ser comparado diretamente.",
+    "C60 é apenas cenário conservador editorial; C62,8 é proxy histórica, não média por adversário. Rating atual individual dos oponentes não coletado.",
+    "FotMob com atualização para 08/11/2026 exibe 24 jogos/1931 minutos, 20g, 9a, quatro gols de pênalti, 90 dribles certos (62,1%), 58 chances, 29 bolas longas certas (58%), 30 cruzamentos certos (24%), 38 duelos aéreos certos (~54,3%). A página detalhada cacheada e FBref apresentam recortes mais antigos: 23j, 1839-1841min, 19g/9a, 85 dribles (62,5%), 57 chances; NÃO misturar amostras.",
+    "Sofascore confirmou identidade, clube e pé ambos, mas aba sazonal interativa sem média sazonal auditável no acesso público. FotMob identifica perna direita; 3/3 em pé fraco é proposta.",
+    "Opta Analyst individual Career não localizado; fonte FBref histórico + FotMob e Sofascore identificadas, sem alegar conclusão da consulta individual da Opta.",
+    "Sem velocidade de pico nem tempo de arranque rastreado, velocidade 78 e aceleração 77 permanecem Nível C, estimadas; impulsão 78/potência de chute 83 também propostas sem medições.",
+    "Técnica T78, desempenho D82, competição histórica C62,8, histórico H77: índice 77,07 → OVR-alvo 77 (regra half-up). C60 → índice 76,65 → OVR-alvo 77; sem dependência robusta de arredondamento nesses dois cenários.",
+    "Revisão de atributos v1.9 comparada à v1.8: talento ofensivo 79→78, drible 81→80, cabeceio 75→73, contato físico 83→80. Outros 21 atributos preservados por falta de evidência suficiente para mudanças adicionais. Não é um redutor universal da liga.",
+    "T/D/C podem conter redundância: D resume produção intraliga, T avalia habilidade transferível, C mede exposição competitiva residual. Impedir desconto numérico duplicado sem calibração; nenhum coeficiente China→Brasil validado.",
+    "4 skills propostas e estilo de jogo não validados por vídeo; Overall 77 editorial não é Overall do PES real."
+  ],
+  "editorial_summary": "Cryzan v1.9: FotMob atualizado em 08/11/2026 24j/1931min, 20g (4PK), 9a, 90 dribles certos (62,1%) e 58 chances; produção excelente na CSL, que em snapshot Opta de 03/11/2025 tinha média 62,8 vs Brasil 77,9 (fonte secundária, não rating 2026). T78 D82 C62,8 H77 => 77,07 => OVR-alvo 77, faixa 76–78. C60 conservador => 76,65 => OVR 77. Estimativas físicas sem punição por país. Não validado no motor PES.",
+  "competition_context_adjustment": {
+    "policy_file": "config/competition-adjustment.v1.json",
+    "reference_league": "Brasileirão Série A",
+    "source_league": "Chinese Super League",
+    "league_rating_verified": true,
+    "source_rating_status": "HISTORICAL_2025_11_03_OPTA_SECONDARY_PROXY_NOT_CURRENT",
+    "quantitative_transfer_coefficients_available": false,
+    "attribute_adjustments_experimental": {
+      "attacking_prowess": {
+        "previous": 82,
+        "revised": 78
+      },
+      "ball_control": {
+        "previous": 81,
+        "revised": 79
+      },
+      "dribbling": {
+        "previous": 84,
+        "revised": 80
+      },
+      "tight_possession": {
+        "previous": 79,
+        "revised": 77
+      },
+      "low_pass": {
+        "previous": 76,
+        "revised": 74
+      },
+      "lofted_pass": {
+        "previous": 74,
+        "revised": 72
+      },
+      "finishing": {
+        "previous": 81,
+        "revised": 78
+      },
+      "heading": {
+        "previous": 76,
+        "revised": 73
+      },
+      "ball_winning": {
+        "previous": 52,
+        "revised": 50
+      },
+      "physical_contact": {
+        "previous": 83,
+        "revised": 80
+      }
+    },
+    "no_auto_physical_reduction": true,
+    "unchanged_physical_attributes": {
+      "speed": 78,
+      "acceleration": 77,
+      "jump": 78,
+      "kicking_power": 83
+    },
+    "double_count_warning": true,
+    "league_rating_historical_only": true,
+    "league_rating_current_2026_verified": false,
+    "league_rating_source": "https://biz.chosun.com/en/en-sports/2025/11/04/XTVX4JYVHZDM5OLTSB6XJMUVVY/?outputType=amp",
+    "league_rating_reference_date": "2025-11-03",
+    "league_rating_reference_value": 62.8,
+    "editorial_conservative_scenario_c": 60,
+    "evaluation_conclusion": "Nenhum redutor fixo por país. A força da liga é proxy datada; T mede habilidade transferível com incerteza; D descreve produção intraliga; 25 atributos permanecem propostas, não converter percentil CSL diretamente para Brasileirão."
+  }
+}

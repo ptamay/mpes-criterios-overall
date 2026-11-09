@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0.0",
+  "player": {
+    "slug": "kevin-de-bruyne",
+    "name": "Kevin De Bruyne",
+    "sofascore_player_id": 70996,
+    "club_as_of_snapshot": "Napoli",
+    "position_pes": "MAT",
+    "preferred_foot": "right"
+  },
+  "snapshot_date": "2026-11-08",
+  "method_version": "1.0.0-experimental",
+  "record_status": "PROVISIONAL_EXPERT_ESTIMATE",
+  "competition_strength_calculation": "manual_approximation_not_minutes_weighted_opponent_sample",
+  "season_evidence": [
+    {
+      "season": "2023/24",
+      "club": "Manchester City",
+      "competition": "Premier League",
+      "scope": "domestic_league",
+      "matches": 18,
+      "minutes": 1228,
+      "goals": 4,
+      "assists": 10,
+      "source_key": "opta_career"
+    },
+    {
+      "season": "2024/25",
+      "club": "Manchester City",
+      "competition": "Premier League",
+      "scope": "domestic_league",
+      "matches": 28,
+      "minutes": 1706,
+      "goals": 4,
+      "assists": 7,
+      "source_key": "opta_career"
+    },
+    {
+      "season": "2025/26",
+      "club": "Napoli",
+      "competition": "Serie A",
+      "scope": "domestic_league",
+      "matches": 18,
+      "minutes": 1169,
+      "goals": 5,
+      "assists": 2,
+      "source_key": "opta_career"
+    },
+    {
+      "season": "2026/27",
+      "club": "Napoli",
+      "competition": "Serie A",
+      "scope": "domestic_league",
+      "matches": 11,
+      "minutes": 624,
+      "goals": 4,
+      "assists": 1,
+      "source_key": "opta_career"
+    },
+    {
+      "season": "2025/26",
+      "club": "Napoli",
+      "competition": "UEFA Champions League",
+      "scope": "club_all_competitions",
+      "matches": 3,
+      "minutes": 191,
+      "goals": 0,
+      "assists": 2,
+      "source_key": "opta_career"
+    }
+  ],
+  "dimensions": {
+    "technical": {
+      "score": 83,
+      "basis": "Criação de chances atual, execução técnica superior em passe rasteiro, alto e cruzamentos; perdas físicas e menor frequência de dribles reduzem a avaliação.",
+      "provenance": "expert_estimate"
+    },
+    "performance": {
+      "score": 79,
+      "basis": "Serie A 2025/26: 18 jogos, 1169 minutos, 5 gols (3 pênaltis) e 2 assistências; 2026/27: 23 chances criadas, 2,31 xA em 623 minutos, 4 gols (1 pênalti) e 1 assistência em 11 jogos; pequena amostra e disponibilidade reduzida.",
+      "provenance": "expert_estimate"
+    },
+    "competition": {
+      "score": 85,
+      "basis": "Força média histórica da Serie A em julho de 2026, não média ponderada pelos adversários específicos.",
+      "provenance": "expert_estimate"
+    },
+    "history": {
+      "score": 93,
+      "basis": "Histórico de criação de elite na Premier League: 2023/24 10 assistências/1228 minutos, 2024/25 7 assistências/1706 minutos; sem usar fama ou mercado como bônus.",
+      "provenance": "expert_estimate"
+    }
+  },
+  "expected_index_rounded": 82,
+  "overall_target": 82,
+  "overall_game_verified": null,
+  "confidence": "moderate",
+  "position_attributes_status": "editorial_proposal_not_measured_not_in_game_validated",
+  "attributes": {
+    "attacking_prowess": 83,
+    "ball_control": 86,
+    "dribbling": 78,
+    "tight_possession": 83,
+    "low_pass": 90,
+    "lofted_pass": 91,
+    "finishing": 78,
+    "heading": 58,
+    "set_piece_taking": 84,
+    "curl": 85,
+    "speed": 70,
+    "acceleration": 68,
+    "kicking_power": 85,
+    "jump": 61,
+    "physical_contact": 71,
+    "balance": 76,
+    "stamina": 74,
+    "defensive_awareness": 56,
+    "ball_winning": 57,
+    "aggression": 61,
+    "gk_awareness": 40,
+    "gk_catching": 40,
+    "gk_clearing": 40,
+    "gk_reflexes": 40,
+    "gk_reach": 40
+  },
+  "other_pes_settings": {
+    "weak_foot_usage": 3,
+    "weak_foot_accuracy": 3,
+    "form": 4,
+    "injury_resistance": 1,
+    "inspiration": {
+      "carrying": 1,
+      "low_pass": 2,
+      "lofted_pass": 2
+    },
+    "special_skills_proposed": [
+      "One-touch Pass",
+      "Through Passing",
+      "Weighted Pass",
+      "Pinpoint Crossing",
+      "Low Lofted Pass",
+      "Outside Curler",
+      "Long Range Shooting",
+      "Long Range Drive"
+    ],
+    "playing_style": "Creative Playmaker (proposta; verificar compatibilidade MAT)",
+    "skills_pending_mapping": [
+      "Skill: todas as sugestões são candidatas; não declarar verificadas em vídeo 2026 sem observação.",
+      "COM sugeridos: Long Ball Expert, Early Cross, Long Ranger. Não são habilidades de jogador."
+    ]
+  },
+  "evidence_urls": {
+    "sofascore": "https://www.sofascore.com/pt/football/player/kevin-de-bruyne/70996",
+    "opta_career": "https://theanalyst.com/players/4141/kevin-de-bruyne/career",
+    "fotmob_2026_27": "https://www.fotmob.com/pt-BR/players/169200/kevin-de-bruyne",
+    "uefa_ucl_2026_27": "https://www.uefa.com/uefachampionsleague/clubs/players/250008901--kevin-de-bruyne/statistics/",
+    "sofascore_2025_26_snapshot": "https://www.sofascore.com/news/de-bruyne-9-1-sofascore-rating-in-napoli-4-0",
+    "napoli_injury_2025": "https://sscnapoli.it/en/bollettino-medico-le-condizioni-di-de-bruyne/",
+    "pesdb_historical": "https://pesdb.net/pes2021/players/k-de-bruyne-44379",
+    "opta_leagues": "https://theanalyst.com/articles/strongest-football-leagues-in-the-world-opta-power-rankings"
+  },
+  "limitations": [
+    "Índice 82,40 e atributos são editoriais; não são OVR calculado pelo PES.",
+    "Não há nota Sofascore sazonal FINAL 2025/26 extraída diretamente do seletor por competição. Snapshot publicado em abril/2026 7,01 (15 partidas, 998 minutos) não é média final da temporada.",
+    "Velocidade máxima de 31,22 km/h foi medida pela UEFA na Champions League 2026/27 (4 partidas, 360 minutos); amostra ainda inferior ao mínimo interno de cinco partidas para certificação Nível A e sem curva de calibração km/h->PES.",
+    "Aceleração não foi medida; 68 é estimativa de baixa confiança e não derivada da velocidade de pico.",
+    "3 dos 5 gols de Serie A 2025/26 e 1 dos 4 gols de Serie A 2026/27 foram pênaltis, motivo para limitar a inferência sobre finalização em jogo corrido.",
+    "Cruzamentos certos em 2026/27: 17 de 40 (42,5%), lançamentos 16 de 39 (41,0%), comparáveis apenas no recorte FotMob; uma taxa isolada não mede toda a dificuldade de execução.",
+    "Histórico de lesões musculares justifica cautela em forma e resistência a lesões, sem assumir perda física quantitativa exata.",
+    "Competição usa proxy de liga 85, não adversários ponderados por minutos.",
+    "Habilidades de PES são hipóteses apoiadas no perfil técnico e cadastro histórico, não verificadas em vídeo atual."
+  ],
+  "editorial_summary": "Kevin De Bruyne, Napoli, 35 anos: MAT com passe excepcional e criação atual 23 chances/623 min de Serie A 2026/27; 2025/26 amostra moderada de 1169 min e lesão grave muscular. T83/D79/C85/H93 => índice 82,40, OVR editorial 82 Extraclasse. Atributos velocidade70/aceleração68 estimados; UEFA registrou 31,22 km/h em 4 partidas UCL, ainda sem calibração. Estado experimental; PES não verificado."
+}

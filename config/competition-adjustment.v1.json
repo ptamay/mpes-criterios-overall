@@ -1,0 +1,67 @@
+{
+  "policy_version": "1.9.0-experimental",
+  "as_of": "2026-11-08",
+  "reference_competition": "Brasileirão Série A",
+  "status": "APPROVED_PRINCIPLE_NOT_CALIBRATED",
+  "weights_unchanged": true,
+  "fundamental_rule": "Atributos dependentes de ações contra adversários devem usar dificuldade comparável; não converter percentis brutos de ligas diferentes diretamente em PES.",
+  "opponent_strength_preference": [
+    "Força dos adversários individualmente enfrentados por minuto (mesma escala e data)",
+    "Média da liga, rotulada proxy e datada",
+    "Sem rating: cenário editorial rotulado, não dado Opta"
+  ],
+  "attribute_dependency": {
+    "high": [
+      "dribbling",
+      "tight_possession",
+      "finishing",
+      "attacking_prowess",
+      "ball_winning",
+      "defensive_awareness",
+      "heading"
+    ],
+    "medium_to_high": [
+      "low_pass",
+      "lofted_pass"
+    ],
+    "medium": [
+      "ball_control",
+      "balance",
+      "physical_contact"
+    ],
+    "no_automatic_competition_discount": [
+      "speed",
+      "acceleration",
+      "jump",
+      "kicking_power",
+      "stamina",
+      "curl",
+      "set_piece_taking"
+    ]
+  },
+  "method_steps": [
+    "Desagregar cada estatística: tentativas/90, sucessos/90, taxa de acerto, taxa de participação, posição, uso e amostra",
+    "Contextualizar pela força e estilo dos adversários, pressão, dificuldade das ações e condições de equipe",
+    "Estabilizar taxas com baixo número de tentativas, não tratar 60% em 5 ações como 60% em 100 ações",
+    "Usar jogadores que transitam entre ligas e têm minutos suficientes para estimar efeitos específicos por atributo",
+    "Calibrar métricas traduzidas contra referência da Série A e atributos do PES com validação manual independente",
+    "Em ausência de fatores validados, devolver intervalo, valor estimado e incerteza; nunca fingir que fator é Opta"
+  ],
+  "no_double_counting": "Se o desempenho D já tiver sido normalizado para o nível da liga destino, não aplicar segundo redutor genérico de produção pela mesma diferença competitiva. C considera exposição competitiva residual, com peso original de 15%, e deve ser testado para redundância. No estágio atual D conserva leitura de produção/regularidade observada, C o contexto competitivo e T a capacidade técnica transferível, todos editoriais.",
+  "special_note": "Drible contabilizado em Sofascore/FotMob é ação realizada contra defesa concreta, não um teste físico isolado; velocidade, aceleração e impulsão não recebem desconto automático da liga.",
+  "numerical_league_transfer_coefficients": null,
+  "sources": [
+    "https://biz.chosun.com/en/en-sports/2025/11/04/XTVX4JYVHZDM5OLTSB6XJMUVVY/?outputType=amp",
+    "https://theanalyst.com/articles/power-rankings-your-club-ranked",
+    "https://theanalyst.com/articles/strongest-football-leagues-in-the-world-opta-power-rankings",
+    "https://doi.org/10.1177/22150218261481583",
+    "https://football-observatory.com/IMG/sites/mr/mr93/en/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10624867/"
+  ],
+  "competition_strength_reference": "config/competition-snapshots.v1.json",
+  "china_historical_c_reference_2025_11": 62.8,
+  "china_conservative_c_scenario": 60.0,
+  "china_c_reference_evidence": "historical_secondary_report_of_opta_2025_not_realtime_2026",
+  "default_rule_china": "C 62,8 somente como proxy histórico Opta divulgado por imprensa em 04/11/2025; 60 como cenário conservador editorial. Registrar data do rating, e substituir por rating contemporâneo de 2026 se comprovado; não comparar CSL 2025 com Brasileirão 2026 como se fosse mesmo snapshot.",
+  "source_note": "As médias históricas de ligas medem força geral; não há coeficiente de transferência automática de dribles/atributos PES. D deve representar produção observada dentro da liga, T transferibilidade em condições equivalentes e C exposição competitiva residual; auditar redundância."
+}

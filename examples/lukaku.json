@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0.0",
+  "player": {
+    "slug": "lukaku",
+    "name": "Romelu Lukaku",
+    "sofascore_player_id": 78893,
+    "club_as_of_snapshot": "Fenerbahçe",
+    "position_pes": "CA",
+    "preferred_foot": "left"
+  },
+  "snapshot_date": "2026-11-07",
+  "method_version": "1.0.0-experimental",
+  "record_status": "PROVISIONAL_EXPERT_ESTIMATE",
+  "competition_strength_calculation": "manual_approximation_not_minutes_weighted_opponent_sample",
+  "season_evidence": [
+    {
+      "season": "2024/25",
+      "club": "Napoli",
+      "competition": "Serie A (Itália)",
+      "scope": "domestic_league",
+      "matches": 36,
+      "minutes": 2871,
+      "goals": 14,
+      "assists": 10,
+      "source_key": "opta_career"
+    },
+    {
+      "season": "2025/26",
+      "club": "Napoli",
+      "competition": "Serie A (Itália)",
+      "scope": "domestic_league",
+      "matches": 5,
+      "minutes": 39,
+      "goals": 1,
+      "assists": 0,
+      "source_key": "opta_career"
+    },
+    {
+      "season": "2026/27",
+      "club": "Fenerbahçe",
+      "competition": "Süper Lig (Turquia)",
+      "scope": "domestic_league",
+      "matches": 9,
+      "minutes": 426,
+      "goals": 1,
+      "assists": 2,
+      "source_key": "opta_career"
+    }
+  ],
+  "dimensions": {
+    "technical": {
+      "score": 79,
+      "basis": "Finalização, presença na área e contato físico superiores; velocidade/aceleração conservadoras, sem testes físicos.",
+      "provenance": "expert_estimate"
+    },
+    "performance": {
+      "score": 76,
+      "basis": "2024/25 tem boa evidência (14 G, 10 A em 2.871 min); 2025/26 com 39 min devido a lesão e 2026/27 ainda amostra pequena.",
+      "provenance": "expert_estimate"
+    },
+    "competition": {
+      "score": 84,
+      "basis": "84/100 é mistura editorial de Serie A recente e Süper Lig atual, NÃO uma média reproduzível dos adversários.",
+      "provenance": "expert_estimate"
+    },
+    "history": {
+      "score": 89,
+      "basis": "Histórico robusto em campeonatos europeus fortes; NÃO é bônus por fama ou preço.",
+      "provenance": "expert_estimate"
+    }
+  },
+  "expected_index_rounded": 79,
+  "overall_target": 79,
+  "overall_game_verified": null,
+  "confidence": "moderate_low",
+  "position_attributes_status": "editorial_proposal_not_measured_not_in_game_validated",
+  "attributes": {
+    "attacking_prowess": 84,
+    "ball_control": 77,
+    "dribbling": 72,
+    "tight_possession": 72,
+    "low_pass": 76,
+    "lofted_pass": 69,
+    "finishing": 84,
+    "heading": 81,
+    "set_piece_taking": 63,
+    "curl": 70,
+    "speed": 74,
+    "acceleration": 68,
+    "kicking_power": 86,
+    "jump": 79,
+    "physical_contact": 88,
+    "balance": 70,
+    "stamina": 70,
+    "defensive_awareness": 48,
+    "ball_winning": 48,
+    "aggression": 62,
+    "gk_awareness": 40,
+    "gk_catching": 40,
+    "gk_clearing": 40,
+    "gk_reflexes": 40,
+    "gk_reach": 40
+  },
+  "other_pes_settings": {
+    "weak_foot_usage": 2,
+    "weak_foot_accuracy": 3,
+    "form": 5,
+    "injury_resistance": 2,
+    "inspiration": {
+      "carrying": 0,
+      "low_pass": 0,
+      "lofted_pass": 0
+    },
+    "special_skills_proposed": [
+      "Heading",
+      "First-time Shot",
+      "Penalty Specialist",
+      "Fighting Spirit",
+      "Captaincy"
+    ],
+    "playing_style": null,
+    "skills_pending_mapping": []
+  },
+  "evidence_urls": {
+    "sofascore": "https://www.sofascore.com/pt/football/player/romelu-lukaku/78893",
+    "opta_career": "https://theanalyst.com/players/4855/romelu-lukaku/career",
+    "napoli_medical": "https://sscnapoli.it/en/bollettino-medico-le-condizioni-di-lukaku/",
+    "opta_leagues": "https://theanalyst.com/articles/strongest-football-leagues-in-the-world-opta-power-rankings"
+  },
+  "limitations": [
+    "2025/26 possui 39 minutos na fonte Opta: desempenho principal recua a 2024/25, por lesão comprovada.",
+    "Competição 84 é aproximação editorial: não calculada por adversários ou mistura objetiva de temporadas.",
+    "Declínio físico atual não quantificado por dados de velocidade/aceleração.",
+    "Nota de resistência a lesões 2 é provisória; a lesão grave isolada não implica automaticamente nota 1.",
+    "OVR 79 não foi confirmado pela fórmula interna do PES 2021."
+  ],
+  "editorial_summary": "Centroavante de área com boa finalização e força; incerteza física pós-lesão. Faixa editorial 78–80."
+}
