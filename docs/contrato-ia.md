@@ -1,5 +1,9 @@
 # Contrato de resposta para agentes e IAs
 
+## Valores comunicados pela liga
+
+Uma ficha pode conter `league_assignment` com a decisão do responsável sobre atributos e Overall. É um **registro de edição da liga**, não um resultado calculado automaticamente e não uma validação independente da exibição no PES. Se houver divergência, exiba primeiro o **Overall adotado pela liga** e depois o `overall_target` editorial, preservando o índice e os quatro subscores originais. `overall_game_verified` continua `null` sem evidência. Exemplo em 09/11/2026: Montoro **77 OVR / 83 drible na liga**; índice MPES **78,295**, alvo editorial anterior **78**. Jamais reescrever T/D/C/H para obter o número escolhido.
+
 ## Resposta humana: regra de visualização
 
 **Padrão: ficha curta e auditável**, não um dump de 25 atributos, **mas nunca sem a dupla consulta histórica à Opta e ao Sofascore**. Procedimento obrigatório: [`coleta-historica.md`](coleta-historica.md). Estrutura recomendada:

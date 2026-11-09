@@ -70,6 +70,18 @@ def validate_record(record: dict, criteria: dict) -> dict:
     rounded=int(index.quantize(Decimal('1'),rounding=ROUND_HALF_UP))
     if rounded != record['expected_index_rounded'] or rounded != record['overall_target']:
         raise ValueError('Overall-alvo divergente do índice ponderado')
+    # Valores adotados pela liga NÃO alteram o índice editorial da metodologia.
+    assignment = record.get('league_assignment')
+    if assignment is not None:
+        if assignment.get('source') != 'explicit_league_decision_reported_by_user':
+            raise ValueError('Decisão da liga sem proveniência explícita')
+        if assignment.get('game_verified') is not False:
+            raise ValueError('Decisão da liga não comprova o Overall do motor PES')
+        if assignment.get('dribbling') != record['attributes']['dribbling']:
+            raise ValueError('Drible adotado pela liga diverge da ficha')
+        adopted = assignment.get('overall')
+        if not isinstance(adopted,int) or isinstance(adopted,bool) or not 40 <= adopted <= 99:
+            raise ValueError('Overall da liga fora da escala')
     for season in record['season_evidence']:
         if season['scope'] not in ('domestic_league','club_all_competitions'):
             raise ValueError('Escopo de temporada inválido')
@@ -81,6 +93,8 @@ def validate_record(record: dict, criteria: dict) -> dict:
     return {'player':record['player']['name'],'index':float(index), 'overall_target':rounded,
             'tier':tier, 'confidence':record['confidence'],
             'overall_game_verified':record['overall_game_verified'],
+            'league_assigned_overall': assignment['overall'] if assignment else None,
+            'league_assigned_dribbling': assignment['dribbling'] if assignment else None,
             'calibrated':False,'method_version':criteria['version']}
 
 def main():

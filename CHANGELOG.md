@@ -1,5 +1,13 @@
 # Histórico de alterações — MPES
 
+## v1.10.1 — 09/11/2026 (decisão da liga: Montoro)
+
+- **Montoro oficialmente definido na liga com Overall 77 e Drible 83**, conforme informação expressa pelo responsável.
+- Preservada estimativa histórica MPES: T79 D76 C83,3 H73 → 78,295 → alvo editorial 78. Os pesos não foram alterados e o índice não foi artificialmente ajustado.
+- Novo registro opcional `league_assignment` para distinguir valores escolhidos pela liga de `overall_target` e `overall_game_verified`. A comunicação do responsável não é confirmação independente da exibição do PES.
+- Atualizados ficha, schema, validador, testes e documentação. Nenhum outro jogador foi alterado.
+
+
 ## Integração multi-IA — 09/11/2026 (documentação, sem revisão de notas)
 
 - Entradas leves `CLAUDE.md` e `GEMINI.md`, ambas incorporando `AGENTS.md` por importação nativa, sem duplicar pesos ou políticas.

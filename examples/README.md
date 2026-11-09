@@ -7,7 +7,7 @@ Garnacho e Lukaku contêm: identidade, evidências por temporada, quatro notas c
 
 **Pesquisa histórica para futuras avaliações:** [`../docs/coleta-historica.md`](../docs/coleta-historica.md). Consultar Opta e Sofascore em temporadas equivalentes; os JSONs atuais incluem URLs, mas **não** uma média Sofascore histórica validada. Habilidades propostas foram normalizadas ao catálogo de 41; sugestões sem mapeamento inequívoco ficam em `skills_pending_mapping`.
 
-- [`alvaro-montoro.json`](alvaro-montoro.json): Botafogo, 2026, 28 jogos/1.867 minutos de Série A; criação e drible, Overall-alvo 78; velocidade/aceleração nível C, sem rastreamento físico.
+- [`alvaro-montoro.json`](alvaro-montoro.json): Botafogo, 2026, 28 jogos/1.867 minutos de Série A; **liga adotou Overall 77 e Drible 83** (09/11/2026). Índice histórico MPES 78,295 → alvo editorial 78, mantido para auditoria. Aceleração/velocidade Nível C; ainda sem confirmação in-game.
 
 - [`gabriel-bontempo.json`](gabriel-bontempo.json): Santos, 2026, 30 jogos/2.090 min Série A (FotMob); 1 gol/3 assistências, 45 chances criadas, 40 desarmes, Overall-alvo 76; Nível C físico. Contraste com Montoro em [`../README.md`](../README.md).
 

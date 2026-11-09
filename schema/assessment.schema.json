@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/ptamay/pes21-criterios-overall/blob/main/schema/assessment.schema.json",
+  "$id": "https://github.com/ptamay/mpes-criterios-overall/blob/main/schema/assessment.schema.json",
   "title": "Ficha de avaliação experimental PES 2021",
   "description": "Validate editorial traceability and completeness. Does NOT verify the Konami engine OVR.",
   "type": "object",
@@ -519,6 +519,45 @@
     "editorial_summary": {
       "type": "string",
       "minLength": 12
+    },
+    "league_assignment": {
+      "type": "object",
+      "description": "Decisão da liga relatada pelo responsável; distinta do Overall editorial e de validação in-game.",
+      "required": [
+        "as_of",
+        "overall",
+        "dribbling",
+        "source",
+        "game_verified",
+        "notes"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "as_of": {
+          "type": "string",
+          "format": "date"
+        },
+        "overall": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "dribbling": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 99
+        },
+        "source": {
+          "const": "explicit_league_decision_reported_by_user"
+        },
+        "game_verified": {
+          "const": false
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 15
+        }
+      }
     }
   }
 }

@@ -1,6 +1,8 @@
-# Metodologia — fórmula-base v1.0 (documentação MPES v1.10)
+# Metodologia — fórmula-base v1.0 (documentação MPES v1.10.1)
 
-**Fonte canônica:** [ptamay/mpes-criterios-overall](https://github.com/ptamay/mpes-criterios-overall) · [guia de atualização](publicacao-github.md). Este documento explica a fórmula aprovada; a versão de documentação 1.10 não significa revisão dos pesos. Datas de 07/11/2026 abaixo identificam recortes históricos e não instruem a reutilizá-los em avaliações futuras.
+**Separar decisão da liga e cálculo experimental:** `league_assignment` documenta uma edição aprovada pelo responsável, sem alterar o índice calculado pelo MPES. O valor exibido no jogo só é certificado com evidência específica em `overall_game_verified`. Exemplo: Montoro foi adotado pela liga com **77 OVR e 83 drible**, enquanto o índice experimental anterior **78,295** arredonda para 78. Não recalibrar o método para perseguir o valor escolhido.
+
+**Fonte canônica:** [ptamay/mpes-criterios-overall](https://github.com/ptamay/mpes-criterios-overall) · [guia de atualização](publicacao-github.md). Este documento explica a fórmula aprovada; a versão de documentação 1.10.1 não significa revisão dos pesos. Datas de 07/11/2026 abaixo identificam recortes históricos e não instruem a reutilizá-los em avaliações futuras.
 
 ## 1. Finalidade e escopo
 

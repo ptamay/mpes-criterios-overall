@@ -5,7 +5,7 @@
 - **Nome exato:** [`ptamay/mpes-criterios-overall`](https://github.com/ptamay/mpes-criterios-overall).
 - **Branch principal:** `main`; repositório público. O nome antigo `pes21-criterios-overall` era uma proposta local, **não** o destino remoto.
 - **Publicação inicial v1.10:** commit [`571f12f`](https://github.com/ptamay/mpes-criterios-overall/commit/571f12f4378e1fcd3ee2e39998a9574e491d3638).
-- **Versão documental/de fichas:** v1.10; **versão da fórmula-base:** v1.0 (`config/criteria.v1.json`). Não atualizar pesos só para alinhar numericamente os dois identificadores.
+- **Versão documental/de fichas:** v1.10.1 (valores da liga para Montoro; publicação inicial v1.10); **versão da fórmula-base:** v1.0 (`config/criteria.v1.json`). Não atualizar pesos só para alinhar numericamente os dois identificadores.
 
 O GitHub é a fonte da verdade. Pacotes ZIP anteriores são capturas históricas que **não** substituem os arquivos da `main`. Para novas análises por IAs, carregar primeiro `AGENTS.md`, `docs/contrato-ia.md`, `config/criteria.v1.json` e os arquivos de evidência pertinentes.
 
@@ -15,6 +15,10 @@ O GitHub é a fonte da verdade. Pacotes ZIP anteriores são capturas históricas
 - **Gemini CLI:** `GEMINI.md` importa o `AGENTS.md` canônico; confira por `/memory show`.
 - **Gemini no navegador:** importe a URL do GitHub pela opção **Importar código**, então peça explicitamente a leitura das regras. O conteúdo não é atualizado automaticamente após novos commits. Guia: [`uso-gemini.md`](uso-gemini.md).
 - **Política:** entradas específicas por ferramenta só orientam o carregamento e o fluxo; não duplicar nem redefinir `config/criteria.v1.json`.
+
+## Decisões da liga
+
+Quando o responsável informar valores já adotados no campeonato, atualize `league_assignment` na ficha pertinente e o atributo correspondente. Preserve `overall_target` como cálculo experimental auditável e `overall_game_verified=null` até confirmação independente no PES. Atualize documentação/testes e valide o resultado. Use o Overall adotado pela liga nas comparações práticas.
 
 ## Arquivos e responsabilidades
 

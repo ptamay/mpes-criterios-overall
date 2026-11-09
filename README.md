@@ -2,11 +2,11 @@
 
 **Metodologia aberta e auditável de avaliação de jogadores do PES 2021**, pensada para uma liga personalizada cujo nível de comparação é o Brasileirão Série A. Inclui regras, definições dos 25 atributos e nove exemplos editoriais (Garnacho, Lukaku, Álvaro Montoro, Gabriel Bontempo, Kevin De Bruyne, Luciano Acosta, Cryzan, Messi e Neymar, até 09/11/2026).
 
-> **Documentação publicada: v1.10 (09/11/2026). Fórmula-base: v1.0.** Os pesos gerais foram adotados pela liga, mas as conversões de estatísticas para notas ainda **não foram calibradas**. Valores de atributos são propostas editoriais. Não confundir o índice da metodologia com o Overall gerado pelo motor do PES.
+> **Documentação publicada: v1.10.1 (09/11/2026). Fórmula-base: v1.0.** Os pesos gerais foram adotados pela liga, mas as conversões de estatísticas para notas ainda **não foram calibradas**. Valores de atributos são propostas editoriais. Não confundir o índice da metodologia com o Overall gerado pelo motor do PES.
 
 ## Comece aqui
 
-**Repositório oficial:** [ptamay/mpes-criterios-overall](https://github.com/ptamay/mpes-criterios-overall), branch `main`. Este repositório é a fonte canônica das regras e fichas; arquivos ZIP anteriores são registros históricos. Consulte o [guia de manutenção e publicação](docs/publicacao-github.md) antes de atualizar. **v1.10** é a versão do pacote documental/de exemplos; `config/criteria.v1.json` continua identificando a **fórmula v1.0**, cujo peso 45/35/15/5 não mudou.
+**Repositório oficial:** [ptamay/mpes-criterios-overall](https://github.com/ptamay/mpes-criterios-overall), branch `main`. Este repositório é a fonte canônica das regras e fichas; arquivos ZIP anteriores são registros históricos. Consulte o [guia de manutenção e publicação](docs/publicacao-github.md) antes de atualizar. **v1.10.1** é a versão do pacote documental/de exemplos; `config/criteria.v1.json` continua identificando a **fórmula v1.0**, cujo peso 45/35/15/5 não mudou.
 
 **Validação local** (Python 3.11+, na raiz do repositório): `python -m src.pes21_method validate` e `python -m unittest discover -s tests -v`. A verificação estrutural não substitui teste do Overall no motor do PES.
 
@@ -85,7 +85,7 @@ Cada componente é uma **nota editorial padronizada de 0 a 100**; não inserir d
 
 ## Terceiro caso — Álvaro Montoro, Botafogo (08/11/2026)
 
-**Resultado provisório: MAT, Overall-alvo 78 (Craque).** Índice: **78,295** → **78**, em quatro dimensões ainda editoriais: técnica 79 (45%), desempenho 76 (35%), competição 83,3 (15%; média de liga histórica) e histórico 73 (5%). **Overall in-game não confirmado.**
+**Valores adotados pela liga (09/11/2026): MAT, Overall 77 (Muito bom), Drible 83.** A análise experimental anterior do MPES permanece registrada, separadamente: índice **78,295** → Overall-alvo editorial **78**, técnica 79 (45%), desempenho 76 (35%), competição 83,3 (15%) e histórico 73 (5%). **Não manipular os componentes para forçar o índice a 77.** O responsável comunicou a decisão da liga, mas a exibição no motor PES não foi verificada independentemente (`overall_game_verified=null`).
 
 | Evidência | Montoro | Proveniência |
 | --- | ---: | --- |
@@ -105,7 +105,7 @@ Cada componente é uma **nota editorial padronizada de 0 a 100**; não inserir d
 | --- | ---: |
 | Talento ofensivo | 77 |
 | Controle de bola | 82 |
-| Drible | 85 |
+| Drible | **83** (liga) |
 | Condução firme | 82 |
 | Passe rasteiro | 74 |
 | Passe alto | 72 |
@@ -151,9 +151,10 @@ Cada componente é uma **nota editorial padronizada de 0 a 100**; não inserir d
 | Técnica T / Desempenho D | 79 / 76 | 76 / 74 |
 | Competição C / Histórico H | 83,3 / 73 | 83,3 / 71 |
 | Índice editorial | 78,295 | 76,145 |
-| **Overall-alvo editorial** | **78** | **76** |
+| **Overall-alvo editorial (modelo)** | **78** | **76** |
+| **Overall adotado pela liga** | **77** | Não informado |
 | **Velocidade / Aceleração** | **77 / 81 (Nível C)** | **74 / 77 (Nível C)** |
-| Overalls testados no motor PES | Não | Não |
+| Overalls verificados no motor PES | Não | Não |
 
 **Justificativa:** Montoro dribla mais e progride de modo individual; Bontempo troca passes com mais segurança e contribui mais nos desarmes. O fato de Montoro ter 5 assistências não comprova passe rasteiro superior. Em ambos, dribles são indicadores técnicos *indiretos* para a avaliação física, não cronometrias. O pé fraco de Bontempo (uso 3/4) é hipótese apoiada por sua distribuição de chutes entre pernas, não medida de precisão.
 
