@@ -1,8 +1,10 @@
-# Metodologia — fórmula-base v1.0 (documentação MPES v1.10.1)
+# Metodologia — fórmula-base v1.0 (documentação MPES v1.10.2)
 
-**Separar decisão da liga e cálculo experimental:** `league_assignment` documenta uma edição aprovada pelo responsável, sem alterar o índice calculado pelo MPES. O valor exibido no jogo só é certificado com evidência específica em `overall_game_verified`. Exemplo: Montoro foi adotado pela liga com **77 OVR e 83 drible**, enquanto o índice experimental anterior **78,295** arredonda para 78. Não recalibrar o método para perseguir o valor escolhido.
+**Política de uso desde 11/11/2026:** o MPES fornece a metodologia para **avaliações sob demanda**. O repositório não precisa receber uma ficha por jogador analisado; `examples/` permanece como acervo histórico. Novas fichas só são publicadas por solicitação explícita do responsável. O que deve ser sincronizado continuamente são as regras e os protocolos, não cada recomendação individual.
 
-**Fonte canônica:** [ptamay/mpes-criterios-overall](https://github.com/ptamay/mpes-criterios-overall) · [guia de atualização](publicacao-github.md). Este documento explica a fórmula aprovada; a versão de documentação 1.10.1 não significa revisão dos pesos. Datas de 07/11/2026 abaixo identificam recortes históricos e não instruem a reutilizá-los em avaliações futuras.
+**Exceções não recalibram outros jogadores:** Montoro teve uma votação com participação dos membros da liga; foram adotados **77 OVR e 83 de drible**, diferentes do índice editorial anterior **78,295 → 78**. A votação não altera pesos, escalas, estimativas de outros atletas ou a exigência de evidências. Em condições normais, o Overall-alvo calculado permanece a recomendação. Se um registro excepcional for solicitado, usar `league_assignment` separado de `overall_target` e `overall_game_verified`, que depende de comprovação no jogo.
+
+**Fonte canônica:** [ptamay/mpes-criterios-overall](https://github.com/ptamay/mpes-criterios-overall) · [guia de atualização](publicacao-github.md). Este documento explica a fórmula aprovada; a versão de documentação 1.10.2 não significa revisão dos pesos. Datas de 07/11/2026 abaixo identificam recortes históricos e não instruem a reutilizá-los em avaliações futuras.
 
 ## 1. Finalidade e escopo
 

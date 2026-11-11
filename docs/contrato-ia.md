@@ -1,8 +1,12 @@
 # Contrato de resposta para agentes e IAs
 
-## Valores comunicados pela liga
+## Avaliações sob demanda e exceções da liga
 
-Uma ficha pode conter `league_assignment` com a decisão do responsável sobre atributos e Overall. É um **registro de edição da liga**, não um resultado calculado automaticamente e não uma validação independente da exibição no PES. Se houver divergência, exiba primeiro o **Overall adotado pela liga** e depois o `overall_target` editorial, preservando o índice e os quatro subscores originais. `overall_game_verified` continua `null` sem evidência. Exemplo em 09/11/2026: Montoro **77 OVR / 83 drible na liga**; índice MPES **78,295**, alvo editorial anterior **78**. Jamais reescrever T/D/C/H para obter o número escolhido.
+- **Padrão:** realizar a análise, apresentar o Overall calculado, justificativas, fontes, confiança e 25 atributos quando solicitados, **sem criar ou atualizar ficha no repositório**.
+- **Persistência opt-in:** só salvar uma avaliação de jogador em `examples/*.json` se o responsável **pedir explicitamente**. O acervo já publicado é histórico, não uma lista a atualizar em cada avaliação.
+- **Valor padrão:** o `overall_target` arredondado da fórmula T45/D35/C15/H5 é a recomendação editorial. A decisão excepcional sobre outro atleta não deve influenciar automaticamente seu cálculo ou sua nota.
+- **Votação de Montoro:** os participantes votaram e a liga adotou **77 de Overall e 83 de Drible**. A avaliação experimental anterior registra 78,295 → 78. Essa votação não muda a metodologia nem exige reduzir o Overall de Barletta, cuja proposta experimental anterior continua 76,35 → **76**. Não declarar unanimidade sem evidência.
+- **Se uma exceção estiver registrada:** distinguir o valor de uso da liga (`league_assignment`) do índice/editorial (`overall_target`) e da conferência dentro do jogo (`overall_game_verified`). Sem evidência de verificação no motor PES, manter este último nulo.
 
 ## Resposta humana: regra de visualização
 

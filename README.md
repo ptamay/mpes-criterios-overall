@@ -2,11 +2,17 @@
 
 **Metodologia aberta e auditável de avaliação de jogadores do PES 2021**, pensada para uma liga personalizada cujo nível de comparação é o Brasileirão Série A. Inclui regras, definições dos 25 atributos e nove exemplos editoriais (Garnacho, Lukaku, Álvaro Montoro, Gabriel Bontempo, Kevin De Bruyne, Luciano Acosta, Cryzan, Messi e Neymar, até 09/11/2026).
 
-> **Documentação publicada: v1.10.1 (09/11/2026). Fórmula-base: v1.0.** Os pesos gerais foram adotados pela liga, mas as conversões de estatísticas para notas ainda **não foram calibradas**. Valores de atributos são propostas editoriais. Não confundir o índice da metodologia com o Overall gerado pelo motor do PES.
+> **Documentação publicada: v1.10.2 (11/11/2026). Fórmula-base: v1.0.** Os pesos gerais foram adotados pela liga, mas as conversões de estatísticas para notas ainda **não foram calibradas**. Valores de atributos são propostas editoriais. Não confundir o índice da metodologia com o Overall gerado pelo motor do PES.
+
+## Política atual: metodologia sincronizada, jogadores sob demanda
+
+**Desde 11/11/2026, o objetivo do repositório é manter a metodologia atualizada, e não salvar cada jogador avaliado.** IAs devem analisar jogadores no chat aplicando a fórmula e os protocolos. **Não criar nem alterar `examples/*.json` ou rankings automaticamente.** O acervo existente é histórico; nova ficha só é publicada mediante **pedido explícito** do responsável.
+
+**Regra de Overall:** usar o cálculo MPES (T45/D35/C15/H5, arredondamento half-up) por padrão. A votação dos participantes da liga sobre **Montoro 77 OVR / 83 Drible** foi uma **exceção específica**, diferente do cálculo histórico 78,295 → 78. Não aplicar descontos automáticos a outros atletas por essa votação. No caso de Barletta, a avaliação experimental anterior permanece **76,35 → OVR 76**, sem obrigação de salvar ficha. Consulte [metodologia](docs/metodologia.md), [contrato para IAs](docs/contrato-ia.md) e [política de publicação](docs/publicacao-github.md).
 
 ## Comece aqui
 
-**Repositório oficial:** [ptamay/mpes-criterios-overall](https://github.com/ptamay/mpes-criterios-overall), branch `main`. Este repositório é a fonte canônica das regras e fichas; arquivos ZIP anteriores são registros históricos. Consulte o [guia de manutenção e publicação](docs/publicacao-github.md) antes de atualizar. **v1.10.1** é a versão do pacote documental/de exemplos; `config/criteria.v1.json` continua identificando a **fórmula v1.0**, cujo peso 45/35/15/5 não mudou.
+**Repositório oficial:** [ptamay/mpes-criterios-overall](https://github.com/ptamay/mpes-criterios-overall), branch `main`. Este repositório é a fonte canônica das regras e fichas; arquivos ZIP anteriores são registros históricos. Consulte o [guia de manutenção e publicação](docs/publicacao-github.md) antes de atualizar. **v1.10.2** é a versão documental; os exemplos existentes são registros históricos, não fichas a atualizar após cada avaliação; `config/criteria.v1.json` continua identificando a **fórmula v1.0**, cujo peso 45/35/15/5 não mudou.
 
 **Validação local** (Python 3.11+, na raiz do repositório): `python -m src.pes21_method validate` e `python -m unittest discover -s tests -v`. A verificação estrutural não substitui teste do Overall no motor do PES.
 

@@ -35,5 +35,22 @@ class TestRepositoryDocumentation(unittest.TestCase):
         for file in (claude, gemini):
             self.assertIn("ptamay/mpes-criterios-overall", file if "ptamay/" in file else (ROOT / "AGENTS.md").read_text(encoding="utf-8"))
 
+    def test_methodology_only_policy(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        agents = (ROOT / "AGENTS.md").read_text(encoding="utf-8")
+        contract = (ROOT / "docs/contrato-ia.md").read_text(encoding="utf-8")
+        methodology = (ROOT / "docs/metodologia.md").read_text(encoding="utf-8")
+        publishing = (ROOT / "docs/publicacao-github.md").read_text(encoding="utf-8")
+        for document in (readme, agents, contract, methodology, publishing):
+            self.assertIn("Montoro", document)
+            self.assertIn("77", document)
+            self.assertIn("83", document)
+        self.assertIn("v1.10.2", readme)
+        self.assertIn("v1.10.2", agents)
+        self.assertIn("sem criar ou atualizar", contract.lower())
+        self.assertIn("pedido explícito", agents)
+        self.assertIn("exemplos existentes", publishing.lower())
+        self.assertIn("não altera pesos", methodology.lower())
+
 if __name__ == "__main__":
     unittest.main()

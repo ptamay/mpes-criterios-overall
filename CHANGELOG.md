@@ -1,5 +1,14 @@
 # Histórico de alterações — MPES
 
+## v1.10.2 — 11/11/2026 (política operacional: somente metodologia)
+
+- **Fonte persistente de verdade:** o repositório guarda e sincroniza a metodologia MPES, as instruções de IA, os protocolos, critérios e testes. As avaliações futuras de jogadores são realizadas **no chat**, sem criar ou atualizar fichas `examples/*.json` por padrão.
+- **Publicação de jogador apenas por pedido explícito** do responsável; exemplos antigos permanecem no repositório como snapshots históricos.
+- **Exceção de Montoro detalhada:** houve votação dos participantes da liga e foram adotados Overall 77 e Drible 83. A exceção não recalibra a fórmula e não reduz automaticamente outros jogadores.
+- **Barletta permanece com recomendação experimental de Overall 76** (índice 76,35); sua ficha não foi publicada e não há necessidade de persisti-la.
+- Alterados somente README, AGENTS, documentação de metodologia, contrato de IA, publicação, CHANGELOG e testes. **Sem alterações em `config/criteria.v1.json`, `examples/` ou motor de cálculo.**
+
+
 ## v1.10.1 — 09/11/2026 (decisão da liga: Montoro)
 
 - **Montoro oficialmente definido na liga com Overall 77 e Drible 83**, conforme informação expressa pelo responsável.

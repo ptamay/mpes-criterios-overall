@@ -4,14 +4,18 @@
 
 **Compatibilidade entre ferramentas:** `CLAUDE.md` importa este `AGENTS.md` no Claude Code e `GEMINI.md` importa este `AGENTS.md` no Gemini CLI. Eles são pontos de entrada, **não fontes alternativas de regras**. No Gemini web é necessário importar o repositório pela interface e pedir leitura explícita dos arquivos. Veja [`docs/uso-gemini.md`](docs/uso-gemini.md).
 
-## Decisão da liga versus estimativa editorial
+## Política operacional — metodologia, não catálogo de jogadores
 
-Quando o responsável informar valores efetivamente escolhidos para a liga, registre-os em `league_assignment` com data/proveniência e apresente-os como referência vigente do campeonato. Preserve `overall_target` e `expected_index_rounded`, que são resultados aritméticos do MPES — **não force os subscores para coincidir com a decisão da liga**. O campo `overall_game_verified` permanece `null` sem comprovação independente do PES. Em 09/11/2026: Montoro foi adotado pela liga com **Overall 77 e Drible 83**, embora seu índice histórico MPES 78,295 resulte em alvo editorial 78. Para comparações, diferencie estes números explicitamente.
+1. **Objetivo do GitHub:** manter sincronizados os critérios, pesos, fontes, protocolos, classificações e instruções para IAs. Novas avaliações de atletas são feitas **sob demanda no chat**, sem necessidade de salvar uma ficha.
+2. **Não persistir jogadores por padrão:** a partir de 11/11/2026, não criar nem alterar `examples/*.json`, rankings ou fichas individuais por consequência de uma análise. Só publicar jogador com **pedido explícito** do responsável. Preservar os exemplos já existentes como acervo histórico.
+3. **Overall recomendado:** usar o índice e o arredondamento do MPES como padrão. Uma decisão de exceção sobre um atleta **não altera** a fórmula nem serve de motivo para reduzir ou recalibrar outros atletas.
+4. **Exceção da liga:** Montoro passou por votação com participação dos membros da liga, que adotou **Overall 77 e Drible 83**. O cálculo experimental anterior permanece **78,295 → Overall-alvo 78**. Não presumir unanimidade, não recalcular T/D/C/H para forçar concordância nem generalizar a votação.
+5. **Rastreabilidade sem persistência obrigatória:** se houver pedido explícito para registrar uma decisão, `league_assignment` deve ficar separado de `overall_target`; `overall_game_verified` só muda com evidência do valor no motor PES. A análise no chat não precisa gerar JSON no GitHub.
 
 ## Repositório canônico e atualização
 
 - **Fonte oficial:** [ptamay/mpes-criterios-overall](https://github.com/ptamay/mpes-criterios-overall), branch `main`. O antigo endereço `ptamay/pes21-criterios-overall` não é o repositório deste projeto. Não crie repositórios novos nem publique em destinos aproximados.
-- **Versões distintas:** a documentação e os exemplos estão na versão **v1.10.1**; o arquivo `config/criteria.v1.json` representa a fórmula-base **v1.0**. Alterações documentais não autorizam mudar pesos ou recalcular fichas.
+- **Versões distintas:** a documentação e os exemplos estão na versão **v1.10.2** (documentação); o arquivo `config/criteria.v1.json` representa a fórmula-base **v1.0**. Alterações documentais não autorizam mudar pesos ou recalcular fichas.
 - **Manutenção:** consulte [`docs/publicacao-github.md`](docs/publicacao-github.md), leia os arquivos atuais do GitHub antes de alterar, preserve proveniência e recortes, execute `python -m src.pes21_method validate` e `python -m unittest discover -s tests -v`, e registre alterações no CHANGELOG. Sempre informe o SHA do commit ou deixe explícito que a publicação não ocorreu.
 - **Regra de avaliação:** dados Sofascore/Opta não são atributos oficiais de PES; separar estatística verificada, estimativa editorial e valores confirmados no editor. Não transportar diretamente drible, passes ou finalização entre ligas de exigência diferente e não penalizar fisicamente por nome da liga.
 

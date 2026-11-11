@@ -5,7 +5,7 @@
 - **Nome exato:** [`ptamay/mpes-criterios-overall`](https://github.com/ptamay/mpes-criterios-overall).
 - **Branch principal:** `main`; repositório público. O nome antigo `pes21-criterios-overall` era uma proposta local, **não** o destino remoto.
 - **Publicação inicial v1.10:** commit [`571f12f`](https://github.com/ptamay/mpes-criterios-overall/commit/571f12f4378e1fcd3ee2e39998a9574e491d3638).
-- **Versão documental/de fichas:** v1.10.1 (valores da liga para Montoro; publicação inicial v1.10); **versão da fórmula-base:** v1.0 (`config/criteria.v1.json`). Não atualizar pesos só para alinhar numericamente os dois identificadores.
+- **Versão documental:** v1.10.2 (política de avaliações sob demanda; exemplos antigos preservados); **versão da fórmula-base:** v1.0 (`config/criteria.v1.json`). Não atualizar pesos só para alinhar numericamente os dois identificadores.
 
 O GitHub é a fonte da verdade. Pacotes ZIP anteriores são capturas históricas que **não** substituem os arquivos da `main`. Para novas análises por IAs, carregar primeiro `AGENTS.md`, `docs/contrato-ia.md`, `config/criteria.v1.json` e os arquivos de evidência pertinentes.
 
@@ -16,9 +16,14 @@ O GitHub é a fonte da verdade. Pacotes ZIP anteriores são capturas históricas
 - **Gemini no navegador:** importe a URL do GitHub pela opção **Importar código**, então peça explicitamente a leitura das regras. O conteúdo não é atualizado automaticamente após novos commits. Guia: [`uso-gemini.md`](uso-gemini.md).
 - **Política:** entradas específicas por ferramenta só orientam o carregamento e o fluxo; não duplicar nem redefinir `config/criteria.v1.json`.
 
-## Decisões da liga
+## Política de sincronização da metodologia (11/11/2026)
 
-Quando o responsável informar valores já adotados no campeonato, atualize `league_assignment` na ficha pertinente e o atributo correspondente. Preserve `overall_target` como cálculo experimental auditável e `overall_game_verified=null` até confirmação independente no PES. Atualize documentação/testes e valide o resultado. Use o Overall adotado pela liga nas comparações práticas.
+- **Repositório como fonte da metodologia:** manter critérios, referências, coleta histórica, contexto competitivo, escala, documentação para Claude/Gemini e testes.
+- **Jogadores não precisam ser salvos:** avaliações feitas por ChatGPT, Gemini e Claude são respostas sob demanda. **Não criar/atualizar** `examples/*.json` ou listas de atletas após cada análise, exceto quando o responsável pedir expressamente.
+- **Exemplos existentes permanecem arquivados:** não apagá-los nem tratá-los como fonte de verdade para toda avaliação futura. Suas datas e limitações continuam valendo.
+- **Regra geral:** respeitar o resultado do cálculo MPES; **não alterar a nota de outros jogadores** por causa de um voto excepcional.
+- **Exceção Montoro:** votação dos participantes da liga fixou OVR **77** e Drible **83**, enquanto o índice original **78,295** arredonda para **78**. Não presumir unanimidade, nem transformar essa decisão em calibração da fórmula.
+- **Se solicitada a gravação de um jogador:** documentar proveniência e data, preservar `overall_target` e `overall_game_verified=null` se não houver comprovação in-game.
 
 ## Arquivos e responsabilidades
 
@@ -40,9 +45,9 @@ Quando o responsável informar valores já adotados no campeonato, atualize `lea
 ## Procedimento para atualizar
 
 1. Abra a [`main` atual](https://github.com/ptamay/mpes-criterios-overall/tree/main), leia as regras e **verifique se houve alterações desde seu último acesso**. Não reutilize ZIPs ou hashes antigos como se fossem o HEAD.
-2. Para nova ficha: confirme atleta, clube **real**, competição, temporada e data; consulte Opta e Sofascore por recorte, identifique substitutos quando necessário e registre divergências de fontes. Preencha todos os 25 atributos, quatro parâmetros, inspirações e habilidades candidatas; diferencie o Overall-alvo do valor exibido no PES.
+2. Para avaliar um jogador no chat, pesquise fontes e recortes, entregue o resultado solicitado e suas limitações **sem escrever arquivos**. Apenas mediante pedido explícito de publicação, prepare uma ficha completa e valide a persistência.
 3. Para mudança metodológica: documente hipótese, exemplos de casos afetados, risco de dupla contagem entre T/D/C e necessidade de calibração por adversário. Não converta percentil Sofascore, nota 0–10 ou ranking Opta diretamente em atributo PES.
-4. Atualize `README.md` e/ou documentos pertinentes, `AGENTS.md` se a regra de IA mudar, `examples/` quando houver ficha revisada e `CHANGELOG.md`. A seção demarcada como gerada no README pertence a `scripts/render_readme.py`: não a edite manualmente.
+4. Atualize `README.md` e documentos pertinentes, `AGENTS.md` se a regra de IA mudar e `CHANGELOG.md`. **Não alterar `examples/` por padrão.** A seção gerada do README pertence a `scripts/render_readme.py`: não a edite manualmente.
 5. Execute os comandos abaixo na raiz do clone. Só depois faça commit; não afirme publicação até confirmar o SHA remoto.
 
 ```bash
